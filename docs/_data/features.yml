@@ -51,7 +51,47 @@
     supported: no
     opens: no
 
-- name: bioformats2raw.layout
-  description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
+- name: multiple 'multiscales'
+  description: Does the viewer open any images beyond the first item in the 'multiscales' list?
   vizarr:
     supported: no
+    opens: yes
+
+- name: scale within coordinateTransformations on datasets (v0.4)
+  description: Does the viewer read the 'scale' transformation for each item in `datasets` list?
+  vizarr:
+    supported: no
+    opens: yes
+
+- name: translation within coordinateTransformations on datasets (v0.4)
+  description: Does the viewer read the 'translation' transformation for each item in `datasets` list?
+  vizarr:
+    supported: no
+    opens: yes
+
+- name: scale within coordinateTransformations on multiscales (v0.4)
+  description: Does the viewer read the 'scale' transformation for each item in `multiscales` list?
+  vizarr:
+    supported: no
+    opens: yes
+
+- name: translation within coordinateTransformations on multiscales (v0.4)
+  description: Does the viewer read the 'translation' transformation for each item in `multiscales` list?
+  vizarr:
+    supported: no
+    opens: yes
+
+- name: overlay multiple images
+  description: Is it possible to open more than 1 OME-NGFF image on the same canvas, to overlay them?
+  vizarr:
+    supported: no
+
+- name: multiple Channels
+  description: Does the viewer support viewing of multiple Channels?
+  vizarr:
+    supported: yes
+
+- name: multiple Time-points
+  description: Does the viewer support viewing of multiple Time-points?
+  vizarr:
+    supported: yes
