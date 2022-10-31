@@ -38,6 +38,22 @@ The following versions of each viewer were used in testing:
   </tbody>
 </table>
 
+<style>
+  .supported {
+    background: green;
+    content: "v";
+  }
+  .fails {
+    background: red;
+    content: "X";
+  }
+  .ignored {
+    background: yellow;
+    content: "-";
+  }
+
+</style>
+
 
 <table>
   <thead>
@@ -54,9 +70,9 @@ The following versions of each viewer were used in testing:
         <td>{{ feature.name }}</td>
 
         {% for viewer in site.data.viewers %}
-        <td>
-            <span>{{ viewer }}</span>
-            - {{ feature[viewer].supported }}
+        <td {% if feature[viewer].notes %} title="{{ feature[viewer].notes }}" {% endif %}
+          class="{% if feature[viewer].supported %}supported{% elsif %}feature[viewer].opens %}ignored{% else %}fails{% endif %}">
+          -
         </td>
         {% endfor %}
       </tr>
