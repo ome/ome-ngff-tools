@@ -12,26 +12,30 @@
   vizarr:
     opens: yes
     supported: yes
-    notes: "Works great"
   napari:
     opens: yes
-    supported: no
-    notes: "TODO: fix-me - just testing!"
+    supported: yes
 
 - name: multiscales downsampling not=2
   description: Can the viewer handle pyramids when the scale factor between levels is not equal to 2?
   vizarr:
     supported: no
     opens: no
+  napari:
+    supported: yes
 
 - name: axes (v0.3)
   description: Are the axes names respected?
   vizarr:
     supported: yes
+  napari:
+    supported: yes
 
 - name: axes (v0.4)
   description: Are the axes names and units respected?
   vizarr:
+    supported: yes
+  napari:
     supported: yes
 
 - name: labels
@@ -39,15 +43,23 @@
   vizarr:
     supported: no
     opens: yes
+  napari:
+    supported: yes
 
 - name: HCS plate
   description: Does the viewer display an OME-NGFF plate?
   vizarr:
     supported: yes
+    notes: Only the lowest resolution of a Plate is shown. Clicking a Well loads it in a new window
+  napari:
+    supported: yes
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
   vizarr:
+    supported: no
+    opens: no
+  napari:
     supported: no
     opens: no
 
@@ -56,22 +68,32 @@
   vizarr:
     supported: no
     opens: yes
+  napari:
+    supported: no
+    opens: yes
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list?
   vizarr:
     supported: no
     opens: yes
+  napari:
+    supported: yes
 
 - name: translation within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'translation' transformation for each item in `datasets` list?
   vizarr:
     supported: no
     opens: yes
+  napari:
+    supported: yes
 
 - name: scale within coordinateTransformations on multiscales (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `multiscales` list?
   vizarr:
+    supported: no
+    opens: yes
+  napari:
     supported: no
     opens: yes
 
@@ -80,18 +102,29 @@
   vizarr:
     supported: no
     opens: yes
+  napari:
+    supported: no
+    opens: yes
 
 - name: overlay multiple images
   description: Is it possible to open more than 1 OME-NGFF image on the same canvas, to overlay them?
   vizarr:
     supported: no
+    opens: yes
+  napari:
+    supported: no
+    opens: yes
 
 - name: multiple Channels
   description: Does the viewer support viewing of multiple Channels?
   vizarr:
     supported: yes
+  napari:
+    supported: yes
 
 - name: multiple Time-points
   description: Does the viewer support viewing of multiple Time-points?
   vizarr:
+    supported: yes
+  napari:
     supported: yes
