@@ -3,12 +3,13 @@
 
 The following versions of each viewer were used in testing:
 
+<ul>
 {% for viewer in site.data.viewers %}
   <li>
-      {{ viewer }}
-    </a>
+      <span style="color:red">{{ viewer }}</span>
   </li>
 {% endfor %}
+</ul>
 
 - <a href="https://napari.org">napari</a> 0.4.16 with plugin <a href="https://github.com/ome/napari-ome-zarr/">napari-ome-zarr</a>0.5.2 and <a href="https://github.com/ome/ome-zarr-py/">ome-zarr</a>0.6.0.
 - <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> October 2022. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
@@ -48,8 +49,8 @@ The following versions of each viewer were used in testing:
      <td><a href="https://github.com/hms-dbmi/vizarr/pull/71">n</a></td>
      <td>y</td>
      <td>y</td>
-     <td>y</td>
-     <td>n</td>
+     <td><h1 style="color: green">y</h1></td>
+     <td style="background: red">n</td>
    </tr>
    <tr>
      <td>omero info</td>
