@@ -17,3 +17,41 @@
     opens: yes
     supported: no
     notes: "TODO: fix-me - just testing!"
+
+- name: multiscales downsampling not=2
+  description: Can the viewer handle pyramids when the scale factor between levels is not equal to 2?
+  vizarr:
+    supported: no
+    opens: no
+
+- name: axes (v0.3)
+  description: Are the axes names respected?
+  vizarr:
+    supported: yes
+
+- name: axes (v0.4)
+  description: Are the axes names and units respected?
+  vizarr:
+    supported: yes
+
+- name: labels
+  description: Does the viewer read and display labels nested within the image container?
+  vizarr:
+    supported: no
+    opens: yes
+
+- name: HCS plate
+  description: Does the viewer display an OME-NGFF plate?
+  vizarr:
+    supported: yes
+
+- name: bioformats2raw.layout
+  description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
+  vizarr:
+    supported: no
+    opens: no
+
+- name: bioformats2raw.layout
+  description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
+  vizarr:
+    supported: no
