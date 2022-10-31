@@ -71,9 +71,7 @@ The following versions of each viewer were used in testing:
 
         {% for viewer in site.data.viewers %}
         <td {% if feature[viewer].notes %} title="{{ feature[viewer].notes }}" {% endif %}
-          class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens %}ignored{% else %}fails{% endif %}">
-          -
-        </td>
+          class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens %}ignored{% else %}fails{% endif %}"></td>
         {% endfor %}
       </tr>
     {% endfor %}
