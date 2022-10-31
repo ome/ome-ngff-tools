@@ -40,6 +40,32 @@ The following versions of each viewer were used in testing:
 
 
 <table>
+  <thead>
+    <tr>
+      <th>feature</th>
+      {% for viewer in site.data.viewers %}
+        <th>{{ viewer }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for feature in site.data.features %}
+      <tr>
+        <td>{{ feature.name }}</td>
+
+        {% for viewer in site.data.viewers %}
+        <td>
+            <span>{{ viewer }}</span>
+            - {{ feature[viewer].supported }}
+        </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<table>
  <thead>
    <tr>
      <th></th>

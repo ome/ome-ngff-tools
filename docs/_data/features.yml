@@ -1,6 +1,6 @@
 - name: Z downsample
   description: Does the viewer handle image pyramids which have been down-sampled in the Z axis?
-  vizrr:
+  vizarr:
     opens: no
     supported: no
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
@@ -9,7 +9,7 @@
 
 - name: omero info
   description: Does the viewer use the 'omero' metadata to set channel colours, names and rendering levels?
-  vizrr:
+  vizarr:
     opens: yes
     supported: yes
     notes: "Works great"
