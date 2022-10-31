@@ -1,12 +1,12 @@
 
-# OME-NGFF tools
+<h1>OME-NGFF tools</h1>
 
 The following versions of each viewer were used in testing:
 
 <ul>
 {% for viewer in site.data.viewers %}
   <li>
-      <span style="color:red">{{ viewer }}</span>
+      <span>{{ viewer }}</span>
   </li>
 {% endfor %}
 </ul>
@@ -17,6 +17,27 @@ The following versions of each viewer were used in testing:
 - <a href="https://itkwidgets.readthedocs.io/en/latest">itkwidgets</a>. Use in a python notebook, or open via URL: See <a href="https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr">example</a>.
 - <a href="https://webknossos.org">webKnossos</a> version 19988.
 - <a href="https://www.openmicroscopy.org/omero/">OMERO</a> with BioFormats <a href="https://github.com/ome/ZarrReader">ZarrReader</a> 0.2.0.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>napari</th>
+      <th>vizarr</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for feature in site.data.features %}
+      <tr>
+        <td>{{ feature.name }}</td>
+        <td>{{ feature.napari.supported }}</td>
+        <td>{{ feature.vizarr.supported }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
 
 <table>
  <thead>
