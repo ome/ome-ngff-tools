@@ -29,6 +29,9 @@
   MoBIE:
     supported: no
     opens: yes
+  vtk-itk-viewer:
+    supported: no
+    opens: yes
   webknosses:
     supported: no
     opens: yes
@@ -43,6 +46,8 @@
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
   napari:
+    supported: yes
+  vtk-itk-viewer:
     supported: yes
   webknosses:
     supported: yes
@@ -59,6 +64,10 @@
   MoBIE:
     supported: yes
     opens: yes
+  vtk-itk-viewer:
+    supported: no
+    opens: yes
+    issue_url: https://github.com/InsightSoftwareConsortium/itkwidgets/issues/548#issuecomment-1277788651
   webknosses:
     supported: no
     opens: no
@@ -74,6 +83,8 @@
   MoBIE:
     supported: yes
     opens: yes
+  vtk-itk-viewer:
+    supported: yes
   webknosses:
     supported: yes
 
@@ -89,6 +100,9 @@
     supported: yes
   MoBIE:
     supported: yes
+  vtk-itk-viewer:
+    supported: no
+    opens: yes
   webknosses:
     supported: no
     opens: yes
@@ -103,6 +117,9 @@
   napari:
     supported: yes
   MoBIE:
+    supported: no
+    opens: no
+  vtk-itk-viewer:
     supported: no
     opens: no
   webknosses:
@@ -123,23 +140,16 @@
   MoBIE:
     supported: no
     opens: no
+  vtk-itk-viewer:
+    supported: no
+    opens: no
   webknosses:
     supported: no
     opens: no
 
 - name: multiple 'multiscales'
   description: Does the viewer open any images beyond the first item in the 'multiscales' list?
-  vizarr:
-    supported: no
-    opens: yes
-  napari:
-    supported: no
-    opens: yes
-  MoBIE:
-    supported: no
-    opens: no
-  webknosses:
-    supported: yes
+
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?
@@ -151,6 +161,8 @@
   napari:
     supported: yes
   MoBIE:
+    supported: yes
+  vtk-itk-viewer:
     supported: yes
   webknosses:
     supported: yes
@@ -170,6 +182,8 @@
   MoBIE:
     supported: no
     opens: yes
+  vtk-itk-viewer:
+    supported: yes
   webknosses:
     supported: no
     opens: no
@@ -188,6 +202,8 @@
   MoBIE:
     supported: no
     opens: yes
+  vtk-itk-viewer:
+    supported: yes
   webknosses:
     supported: no
     opens: yes
@@ -206,6 +222,11 @@
   MoBIE:
     supported: no
     opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
+  vtk-itk-viewer:
+    supported: yes
+    opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   webknosses:
     supported: no
     opens: yes
@@ -222,6 +243,9 @@
   MoBIE:
     supported: no
     opens: yes
+  vtk-itk-viewer:
+    supported: yes
+    opens: yes
   webknosses:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
@@ -236,6 +260,8 @@
     supported: yes
   MoBIE:
     supported: yes
+  vtk-itk-viewer:
+    supported: yes
   webknosses:
     supported: no
     opens: yes
@@ -249,6 +275,8 @@
   napari:
     supported: yes
   MoBIE:
+    supported: yes
+  vtk-itk-viewer:
     supported: yes
   webknosses:
     supported: no
