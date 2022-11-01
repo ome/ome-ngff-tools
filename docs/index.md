@@ -27,6 +27,30 @@ The following versions of each viewer were used in testing:
 
 </style>
 
+<h3>Key</h3>
+
+<table style="width:25%">
+  <tbody>
+  <tr>
+    <td>Feature supported</td>
+    <td class="supported"> </td>
+  </tr>
+  <tr>
+    <td>Not supported (no effect)</td>
+    <td class="ignored"> </td>
+  </tr>
+  <tr>
+    <td>Image doesn't open</td>
+    <td class="fails"> </td>
+  </tr>
+  <tr>
+    <td>Not tested</td>
+    <td class="missing"> </td>
+  </tr>
+  </tbody>
+</table>
+
+  
 
 <table>
   <thead>
