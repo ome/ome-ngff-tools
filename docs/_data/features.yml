@@ -106,6 +106,7 @@
   webknosses:
     supported: no
     opens: yes
+    issue_url: https://github.com/scalableminds/webknossos/issues/6538
 
 - name: HCS plate
   description: Does the viewer display an OME-NGFF plate?
@@ -265,6 +266,7 @@
   webknosses:
     supported: no
     opens: yes
+    issue_url: https://github.com/scalableminds/webknossos/issues/6578
 
 - name: multiple Time-points
   description: Does the viewer support viewing of multiple Time-points?
@@ -281,3 +283,4 @@
   webknosses:
     supported: no
     opens: yes
+    issue_url: https://github.com/scalableminds/webknossos/issues/4985
