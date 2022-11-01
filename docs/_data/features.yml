@@ -239,13 +239,13 @@
     supported: no
     opens: yes
   napari:
-    supported: no
+    supported: yes
     opens: yes
   MoBIE:
     supported: no
     opens: yes
   vtk-itk-viewer:
-    supported: yes
+    supported: no
     opens: yes
   webknosses:
     supported: yes
