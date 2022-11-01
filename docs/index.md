@@ -32,6 +32,7 @@ The following versions of each viewer were used in testing:
   <thead>
     <tr>
       <th>feature</th>
+      <td>sample data</td>
       {% for viewer in site.data.viewers %}
         <th>{{ viewer }}</th>
       {% endfor %}
@@ -41,6 +42,14 @@ The following versions of each viewer were used in testing:
     {% for feature in site.data.features %}
       <tr>
         <td>{{ feature.name }}</td>
+        <td>
+          {% if feature.sample_url and feature.sample_name %}
+            <a href="{{ feature.sample_url }}" >{{ feature.sample_name }}</a>
+          {% endif %}
+          {% if feature.sample_html %}
+            {{ feature.sample_html }}
+          {% endif %}
+        </td>
 
         {% for viewer in site.data.viewers %}
         <td {% if feature[viewer].notes %} title="{{ feature[viewer].notes }}" {% endif %}
