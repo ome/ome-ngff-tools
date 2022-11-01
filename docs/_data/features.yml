@@ -1,7 +1,7 @@
 - name: Z downsample
   description: Does the viewer handle image pyramids which have been down-sampled in the Z axis?
-  sample_url: https://minio-dev.openmicroscopy.org/idr/v0.4/idr0077/9836832_z.zarr
-  sample_name: 9836832_z.zarr
+  sample_url: https://minio-dev.openmicroscopy.org/idr/v0.4/idr0077/9836832_z_dtype_fix.zarr
+  sample_name: 9836832_z_dtype_fix.zarr
   vizarr:
     opens: no
     supported: no
@@ -10,9 +10,10 @@
     supported: yes
   MoBIE:
     supported: yes
+    notes: "But the viewer is black!"
   webknosses:
-    supported: no
-    opens: no
+    supported: yes
+    viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
 
 
 - name: omero info
@@ -31,6 +32,7 @@
   webknosses:
     supported: no
     opens: yes
+    issue_url: https://github.com/scalableminds/webknossos/issues/6570
 
 - name: multiscales downsampling not=2
   description: Can the viewer handle pyramids when the scale factor between levels is not equal to 2?
@@ -39,8 +41,12 @@
   vizarr:
     supported: no
     opens: no
+    issue_url: https://github.com/hms-dbmi/vizarr/issues/101
   napari:
     supported: yes
+  webknosses:
+    supported: yes
+    viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/multiscalesfnot2/view?token=wXBnS_9NQ_TiGagtiX1ysg
 
 - name: axes (v0.3)
   description: Are the axes names respected? Are 'z', 'c' & 't' axes handled correctly?
@@ -68,6 +74,8 @@
   MoBIE:
     supported: yes
     opens: yes
+  webknosses:
+    supported: yes
 
 - name: labels
   description: Does the viewer read and display labels nested within the image container?
@@ -76,10 +84,14 @@
   vizarr:
     supported: no
     opens: yes
+    issue_url: https://github.com/hms-dbmi/vizarr/issues/45
   napari:
     supported: yes
   MoBIE:
     supported: yes
+  webknosses:
+    supported: no
+    opens: yes
 
 - name: HCS plate
   description: Does the viewer display an OME-NGFF plate?
@@ -93,6 +105,9 @@
   MoBIE:
     supported: no
     opens: no
+  webknosses:
+    supported: no
+    opens: no
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
@@ -101,10 +116,14 @@
   vizarr:
     supported: no
     opens: no
+    issue_url: https://github.com/hms-dbmi/vizarr/issues/149
   napari:
     supported: no
     opens: no
   MoBIE:
+    supported: no
+    opens: no
+  webknosses:
     supported: no
     opens: no
 
@@ -119,6 +138,8 @@
   MoBIE:
     supported: no
     opens: no
+  webknosses:
+    supported: yes
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?
@@ -131,6 +152,10 @@
     supported: yes
   MoBIE:
     supported: yes
+  webknosses:
+    supported: yes
+    viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/omeroinfo/view?token=8QbWDRXlCP9aWxxQUHzayQ
+    issue_url: https://github.com/scalableminds/webknossos/issues/6577
 
 - name: translation within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'translation' transformation for each item in `datasets` list?
@@ -145,6 +170,10 @@
   MoBIE:
     supported: no
     opens: yes
+  webknosses:
+    supported: no
+    opens: no
+    issue_url: https://github.com/scalableminds/webknossos/issues/6600
 
 - name: scale within coordinateTransformations on multiscales (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `multiscales` list?
@@ -157,6 +186,9 @@
     supported: no
     opens: yes
   MoBIE:
+    supported: no
+    opens: yes
+  webknosses:
     supported: no
     opens: yes
 
@@ -174,6 +206,10 @@
   MoBIE:
     supported: no
     opens: yes
+  webknosses:
+    supported: no
+    opens: yes
+    viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
 
 - name: overlay multiple images
   description: Is it possible to open more than 1 OME-NGFF image on the same canvas, to overlay them?
@@ -186,6 +222,9 @@
   MoBIE:
     supported: no
     opens: yes
+  webknosses:
+    supported: yes
+    viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
 
 - name: multiple Channels
   description: Does the viewer support viewing of multiple Channels?
@@ -197,6 +236,9 @@
     supported: yes
   MoBIE:
     supported: yes
+  webknosses:
+    supported: no
+    opens: yes
 
 - name: multiple Time-points
   description: Does the viewer support viewing of multiple Time-points?
@@ -208,3 +250,6 @@
     supported: yes
   MoBIE:
     supported: yes
+  webknosses:
+    supported: no
+    opens: yes
