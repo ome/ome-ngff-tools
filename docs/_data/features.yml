@@ -14,6 +14,9 @@
   webknosses:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
+  OMERO:
+    supported: no
+    opens: no
 
 
 - name: omero info
@@ -36,6 +39,9 @@
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/6570
+  OMERO:
+    supported: no
+    opens: yes
 
 - name: multiscales downsampling not=2
   description: Can the viewer handle pyramids when the scale factor between levels is not equal to 2?
@@ -52,6 +58,8 @@
   webknosses:
     supported: yes
     viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/multiscalesfnot2/view?token=wXBnS_9NQ_TiGagtiX1ysg
+  OMERO:
+    supported: yes
 
 - name: axes (v0.3)
   description: Are the axes names respected? Are 'z', 'c' & 't' axes handled correctly?
@@ -71,6 +79,8 @@
   webknosses:
     supported: no
     opens: no
+  OMERO:
+    supported: yes
 
 - name: axes (v0.4)
   description: Are the axes names and units respected?
@@ -87,6 +97,9 @@
     supported: yes
   webknosses:
     supported: yes
+  OMERO:
+    supported: no
+    opens: yes
 
 - name: labels
   description: Does the viewer read and display labels nested within the image container?
@@ -107,6 +120,9 @@
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/6538
+  OMERO:
+    supported: no
+    opens: yes
 
 - name: HCS plate
   description: Does the viewer display an OME-NGFF plate?
@@ -126,6 +142,8 @@
   webknosses:
     supported: no
     opens: no
+  OMERO:
+    supported: yes
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
@@ -147,6 +165,8 @@
   webknosses:
     supported: no
     opens: no
+  OMERO:
+    supported: yes
 
 - name: multiple 'multiscales'
   description: Does the viewer open any images beyond the first item in the 'multiscales' list?
@@ -169,6 +189,9 @@
     supported: yes
     viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/omeroinfo/view?token=8QbWDRXlCP9aWxxQUHzayQ
     issue_url: https://github.com/scalableminds/webknossos/issues/6577
+  OMERO:
+    supported: no
+    opens: yes
 
 - name: translation within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'translation' transformation for each item in `datasets` list?
@@ -189,6 +212,9 @@
     supported: no
     opens: no
     issue_url: https://github.com/scalableminds/webknossos/issues/6600
+  OMERO:
+    supported: no
+    opens: yes
 
 - name: scale within coordinateTransformations on multiscales (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `multiscales` list?
@@ -206,6 +232,9 @@
   vtk-itk-viewer:
     supported: yes
   webknosses:
+    supported: no
+    opens: yes
+  OMERO:
     supported: no
     opens: yes
 
@@ -232,6 +261,9 @@
     supported: no
     opens: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
+  OMERO:
+    supported: no
+    opens: yes
 
 - name: overlay multiple images
   description: Is it possible to open more than 1 OME-NGFF image on the same canvas, to overlay them?
@@ -250,6 +282,9 @@
   webknosses:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
+  OMERO:
+    supported: no
+    opens: yes
 
 - name: multiple Channels
   description: Does the viewer support viewing of multiple Channels?
@@ -267,6 +302,8 @@
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/6578
+  OMERO:
+    supported: yes
 
 - name: multiple Time-points
   description: Does the viewer support viewing of multiple Time-points?
@@ -284,3 +321,5 @@
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/4985
+  OMERO:
+    supported: yes
