@@ -77,8 +77,7 @@ The following versions of each viewer were used in testing:
 
         {% for viewer_data in site.data.viewers %}
         {% assign viewer = viewer_data.id %}
-        <td {% if feature[viewer].notes %} title="{{ feature[viewer].notes }}" {% endif %}
-          class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens == false %}fails{% elsif feature[viewer].opens %}ignored{% else %}missing{% endif %}">
+        <td class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens == false %}fails{% elsif feature[viewer].opens %}ignored{% else %}missing{% endif %}">
 
           {% if feature[viewer].viewer_url %}
             <!-- e.g. webknosses or OMERO might have URLs for imported images -->
@@ -94,6 +93,10 @@ The following versions of each viewer were used in testing:
 
           {% if feature[viewer].issue_url %}
             <a href="{{ feature[viewer].issue_url }}">issue</a>
+          {% endif %}
+
+          {% if feature[viewer].notes %}
+            <img src="assets/img/icon_info.svg" width="20px" height="20px" title="{{ feature[viewer].notes }}" />
           {% endif %}
         </td>
         {% endfor %}
