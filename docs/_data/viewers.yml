@@ -2,10 +2,12 @@
   id: napari
 - vizarr:
   id: vizarr
+  viewer_url: https://hms-dbmi.github.io/vizarr/?source=
 - MoBIE:
   id: MoBIE
 - vtk-itk-viewer:
   id: vtk-itk-viewer
+  viewer_url: https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=
 - webknosses:
   id: webknosses
 - OMERO:

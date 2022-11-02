@@ -58,7 +58,7 @@ The following versions of each viewer were used in testing:
       <th>feature</th>
       <td>sample data</td>
       {% for viewer in site.data.viewers %}
-        <th>{{ viewer.name }}</th>
+        <th>{{ viewer.id }}</th>
       {% endfor %}
     </tr>
   </thead>
@@ -76,12 +76,18 @@ The following versions of each viewer were used in testing:
         </td>
 
         {% for viewer_data in site.data.viewers %}
-        {% assign viewer = viewer_data.name %}
+        {% assign viewer = viewer_data.id %}
         <td {% if feature[viewer].notes %} title="{{ feature[viewer].notes }}" {% endif %}
           class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens == false %}fails{% elsif feature[viewer].opens %}ignored{% else %}missing{% endif %}">
 
           {% if feature[viewer].viewer_url %}
+            <!-- e.g. webknosses or OMERO might have URLs for imported images -->
             <a href="{{ feature[viewer].viewer_url }}" target="_blank" title="View the sample file in this viewer in a new tab">
+              <img src="assets/img/icon_eye.svg" />
+            </a>
+          {% elsif viewer_data.viewer_url and feature.sample_url%}
+          <!-- e.g. vizarr and vtk allow direct opening image URL in viewer -->
+            <a href="{{ viewer_data.viewer_url }}{{ feature.sample_url }}" target="_blank" title="View the sample file in this viewer in a new tab">
               <img src="assets/img/icon_eye.svg" />
             </a>
           {% endif %}
