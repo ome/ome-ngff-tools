@@ -6,6 +6,7 @@
     opens: no
     supported: no
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
+    issue_url: https://github.com/hms-dbmi/vizarr/pull/71
   napari:
     supported: yes
   MoBIE:
@@ -179,6 +180,7 @@
   vizarr:
     supported: no
     opens: yes
+    notes: Vizarr doesn't display a scalebar or support scaling info.
   napari:
     supported: yes
   MoBIE:
@@ -207,7 +209,8 @@
     supported: no
     opens: yes
   vtk-itk-viewer:
-    supported: yes
+    supported: no
+    opens: yes
   webknosses:
     supported: no
     opens: no
@@ -254,7 +257,7 @@
     opens: yes
     notes: Not possible to assess translation. Can't overlay multiple images
   vtk-itk-viewer:
-    supported: yes
+    supported: no
     opens: yes
     notes: Not possible to assess translation. Can't overlay multiple images
   webknosses:

@@ -29,7 +29,7 @@ The following versions of each viewer were used in testing:
 
 <h3>Key</h3>
 
-<table style="width:25%">
+<table>
   <tbody>
   <tr>
     <td>Feature supported</td>
@@ -40,7 +40,7 @@ The following versions of each viewer were used in testing:
     <td class="ignored"> </td>
   </tr>
   <tr>
-    <td>Image doesn't open</td>
+    <td>Image doesn't open correctly</td>
     <td class="fails"> </td>
   </tr>
   <tr>
