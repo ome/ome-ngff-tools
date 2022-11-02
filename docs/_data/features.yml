@@ -171,7 +171,24 @@
 
 - name: multiple 'multiscales'
   description: Does the viewer open any images beyond the first item in the 'multiscales' list?
-
+  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0050A/4995115.zarr
+  sample_name: 4995115.zarr
+  vizarr:
+    supported: no
+    opens: yes
+  napari:
+    supported: no
+    opens: yes
+  MoBIE:
+    supported: no
+    opens: no
+  vtk-itk-viewer:
+    supported: no
+    opens: yes
+  webknosses:
+    supported: no
+    opens: no
+    notes: "Could not extract XYZ axis order mapping. Does the data have x, y and z axes, stated in multiscales metadata? <~ invalid xyz axis order: 2,1,-1."
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?

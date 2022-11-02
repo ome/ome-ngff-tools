@@ -80,7 +80,9 @@ The following versions of each viewer were used in testing:
           class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens == false %}fails{% elsif feature[viewer].opens %}ignored{% else %}missing{% endif %}">
 
           {% if feature[viewer].viewer_url %}
-            <a href="{{ feature[viewer].viewer_url }}">view</a>
+            <a href="{{ feature[viewer].viewer_url }}">
+              <img src="assets/img/icon_eye.svg" />
+            </a>
           {% endif %}
 
           {% if feature[viewer].issue_url %}
