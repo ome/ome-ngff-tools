@@ -92,7 +92,9 @@ The following versions of each viewer were used in testing:
           {% endif %}
 
           {% if feature[viewer].issue_url %}
-            <a href="{{ feature[viewer].issue_url }}">issue</a>
+            <a href="{{ feature[viewer].issue_url }}" target="_blank">
+              <img src="https://github.githubassets.com/favicons/favicon.svg" width="20px" height="20px" />
+            </a>
           {% endif %}
 
           {% if feature[viewer].notes %}
