@@ -1,6 +1,12 @@
-- napari
-- vizarr
-- MoBIE
-- vtk-itk-viewer
-- webknosses
-- OMERO
+- napari:
+  id: napari
+- vizarr:
+  id: vizarr
+- MoBIE:
+  id: MoBIE
+- vtk-itk-viewer:
+  id: vtk-itk-viewer
+- webknosses:
+  id: webknosses
+- OMERO:
+  id: OMERO

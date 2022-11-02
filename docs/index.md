@@ -58,7 +58,7 @@ The following versions of each viewer were used in testing:
       <th>feature</th>
       <td>sample data</td>
       {% for viewer in site.data.viewers %}
-        <th>{{ viewer }}</th>
+        <th>{{ viewer.name }}</th>
       {% endfor %}
     </tr>
   </thead>
@@ -75,12 +75,13 @@ The following versions of each viewer were used in testing:
           {% endif %}
         </td>
 
-        {% for viewer in site.data.viewers %}
+        {% for viewer_data in site.data.viewers %}
+        {% assign viewer = viewer_data.name %}
         <td {% if feature[viewer].notes %} title="{{ feature[viewer].notes }}" {% endif %}
           class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens == false %}fails{% elsif feature[viewer].opens %}ignored{% else %}missing{% endif %}">
 
           {% if feature[viewer].viewer_url %}
-            <a href="{{ feature[viewer].viewer_url }}">
+            <a href="{{ feature[viewer].viewer_url }}" target="_blank" title="View the sample file in this viewer in a new tab">
               <img src="assets/img/icon_eye.svg" />
             </a>
           {% endif %}
