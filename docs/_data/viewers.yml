@@ -8,6 +8,11 @@
 - vtk-itk-viewer:
   id: vtk-itk-viewer
   viewer_url: https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=
+- neuroglancer:
+  id: neuroglancer
+  # URL created with: viewer_url + NGFF-url + viewer_url_postfix
+  viewer_url: https://neuroglancer-demo.appspot.com/#!{"layers":[{"source":"zarr://
+  viewer_url_postfix: ","name":"OME-NGFF"}]}
 - webknosses:
   id: webknosses
 - OMERO:

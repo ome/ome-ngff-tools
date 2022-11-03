@@ -87,8 +87,8 @@ The following versions of each viewer were used in testing:
               <img src="assets/img/icon_eye.svg" />
             </a>
           {% elsif viewer_data.viewer_url and feature.sample_url%}
-          <!-- e.g. vizarr and vtk allow direct opening image URL in viewer -->
-            <a href="{{ viewer_data.viewer_url }}{{ feature.sample_url }}" target="_blank" title="View the sample file in this viewer in a new tab">
+          <!-- e.g. vizarr, vtk and neuroglancer allow direct opening image URL in viewer -->
+            <a href="{{ viewer_data.viewer_url }}{{ feature.sample_url }}{{ viewer_data.viewer_url_postfix }}" target="_blank" title="View the sample file in this viewer in a new tab">
               <img src="assets/img/icon_eye.svg" />
             </a>
           {% endif %}
