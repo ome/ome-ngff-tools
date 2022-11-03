@@ -1,7 +1,7 @@
 - name: Z downsample
   description: Does the viewer handle image pyramids which have been down-sampled in the Z axis?
   sample_url: https://minio-dev.openmicroscopy.org/idr/v0.4/idr0077/9836832_z_dtype_fix.zarr
-  sample_name: 9836832_z_dtype_fix.zarr
+  sample_name: 9836832.zarr
   vizarr:
     opens: no
     supported: no
@@ -12,6 +12,8 @@
   MoBIE:
     supported: yes
     notes: "But the viewer is black!"
+  neuroglancer:
+    supported: yes
   webknosses:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
@@ -57,6 +59,8 @@
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
   napari:
     supported: yes
+  neuroglancer:
+    notes: "Fails with Error parsing zarr metadata: Error parsing 'dtype' property: Unsupported numpy data type: >u1"
   vtk-itk-viewer:
     supported: yes
   webknosses:
@@ -76,6 +80,9 @@
   MoBIE:
     supported: yes
     opens: yes
+  neuroglancer:
+    supported: no
+    opens: no
   vtk-itk-viewer:
     supported: no
     opens: yes
@@ -97,6 +104,8 @@
   MoBIE:
     supported: yes
     opens: yes
+  neuroglancer:
+    supported: yes
   vtk-itk-viewer:
     supported: yes
   webknosses:
@@ -169,6 +178,10 @@
   MoBIE:
     supported: no
     opens: no
+  neuroglancer:
+    supported: no
+    opens: no
+    notes: "Error: Neither .zarray metadata nor OME multiscale metadata found"
   vtk-itk-viewer:
     supported: no
     opens: no
@@ -191,6 +204,9 @@
   MoBIE:
     supported: no
     opens: no
+  neuroglancer:
+    supported: no
+    opens: yes
   vtk-itk-viewer:
     supported: no
     opens: yes
@@ -212,6 +228,8 @@
   napari:
     supported: yes
   MoBIE:
+    supported: yes
+  neuroglancer:
     supported: yes
   vtk-itk-viewer:
     supported: yes
@@ -260,6 +278,8 @@
   MoBIE:
     supported: no
     opens: yes
+  neuroglancer:
+    supported: yes
   vtk-itk-viewer:
     supported: yes
   webknosses:
@@ -284,6 +304,8 @@
     supported: no
     opens: yes
     notes: Not possible to assess translation. Can't overlay multiple images
+  neuroglancer:
+    notes: "Can't make out the parent Image 13457227.zarr or overlaid Image 13457539.zarr"
   vtk-itk-viewer:
     supported: no
     opens: yes
@@ -307,6 +329,9 @@
   MoBIE:
     supported: no
     opens: yes
+  neuroglancer:
+    supported: no
+    opens: yes
   vtk-itk-viewer:
     supported: no
     opens: yes
@@ -327,6 +352,9 @@
     supported: yes
   MoBIE:
     supported: yes
+  neuroglancer:
+    supported: no
+    opens: yes
   vtk-itk-viewer:
     supported: yes
   webknosses:
@@ -346,6 +374,9 @@
     supported: yes
   MoBIE:
     supported: yes
+  neuroglancer:
+    supported: no
+    opens: yes
   vtk-itk-viewer:
     supported: yes
   webknosses:
