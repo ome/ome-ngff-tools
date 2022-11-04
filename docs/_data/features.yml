@@ -79,8 +79,7 @@
   napari:
     supported: yes
   MoBIE:
-    supported: yes
-    opens: yes
+    notes: "Image opens but the image is not correctly displayed"
   neuroglancer:
     supported: no
     opens: no
