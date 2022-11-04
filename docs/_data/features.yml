@@ -10,8 +10,7 @@
   napari:
     supported: yes
   MoBIE:
-    supported: yes
-    notes: "But the viewer is black!"
+    notes: "Image opens but the viewer is black!"
   neuroglancer:
     supported: yes
   webknosses:
