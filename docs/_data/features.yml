@@ -228,7 +228,7 @@
   napari:
     supported: yes
   MoBIE:
-    supported: yes
+    notes: "Image opens but the scale bar is indicated as Pixels instead of micrometer."
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
