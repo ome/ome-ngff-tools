@@ -46,7 +46,7 @@ The following versions of each viewer were used in testing:
     <td class="fails"> </td>
   </tr>
   <tr>
-    <td>Not tested</td>
+    <td>Not tested / not confirmed</td>
     <td class="missing"> </td>
   </tr>
   </tbody>
