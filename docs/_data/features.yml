@@ -217,7 +217,7 @@
     opens: no
     notes: "Could not extract XYZ axis order mapping. Does the data have x, y and z axes, stated in multiscales metadata? <~ invalid xyz axis order: 2,1,-1."
   OMERO:
-    supported: yes
+    notes: "Image opens but only shows one of the z-sections"
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?
