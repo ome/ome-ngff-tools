@@ -15,6 +15,7 @@
     notes: "Not clear if multiple resolution levels are being loaded and displayed"
   webknosses:
     supported: yes
+    notes: "Image opens but the viewer is black!"
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
   OMERO:
     supported: no
@@ -162,7 +163,7 @@
     supported: no
     opens: no
   OMERO:
-    supported: yes
+    supported: no
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
