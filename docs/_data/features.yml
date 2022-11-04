@@ -56,6 +56,8 @@
     supported: no
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
+  MoBIE:
+    notes: "Image opens but the image is pixelated"
   napari:
     supported: yes
   neuroglancer:
