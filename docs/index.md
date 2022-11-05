@@ -76,6 +76,8 @@ The following versions of each viewer were used in testing:
         <td>
           {% if feature.sample_url and feature.sample_name %}
             <a href="{{ feature.sample_url }}" >{{ feature.sample_name }}</a>
+            <a href="https://ome.github.io/ome-ngff-validator/?source={{ feature.sample_url }}" target="_blank" title="Open in ome-ngff-validator">
+              <img src="assets/img/icon_check.png" width="20px" height="20px" /></a>
           {% endif %}
           {% if feature.sample_html %}
             {{ feature.sample_html }}
