@@ -67,7 +67,12 @@ The following versions of each viewer were used in testing:
   <tbody>
     {% for feature in site.data.features %}
       <tr>
-        <td>{{ feature.name }}</td>
+        <td>
+          {{ feature.name }}
+          {% if feature.description %}
+            <img src="assets/img/icon_info.svg" width="20px" height="20px" title="{{ feature.description }}" />
+          {% endif %}
+        </td>
         <td>
           {% if feature.sample_url and feature.sample_name %}
             <a href="{{ feature.sample_url }}" >{{ feature.sample_name }}</a>
