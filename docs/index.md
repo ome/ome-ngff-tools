@@ -26,6 +26,9 @@ The following versions of each viewer were used in testing:
   .missing {
     background: grey;
   }
+  .feature img, .sample img {
+    opacity: 0.5;
+  }
 
 </style>
 
@@ -67,10 +70,17 @@ The following versions of each viewer were used in testing:
   <tbody>
     {% for feature in site.data.features %}
       <tr>
-        <td>{{ feature.name }}</td>
-        <td>
+        <td class="feature">
+          {{ feature.name }}
+          {% if feature.description %}
+            <img src="assets/img/icon_info.svg" width="20px" height="20px" title="{{ feature.description }}" />
+          {% endif %}
+        </td>
+        <td class="sample">
           {% if feature.sample_url and feature.sample_name %}
             <a href="{{ feature.sample_url }}" >{{ feature.sample_name }}</a>
+            <a href="https://ome.github.io/ome-ngff-validator/?source={{ feature.sample_url }}" target="_blank" title="Open in ome-ngff-validator">
+              <img src="assets/img/icon_check.png" width="20px" height="20px" /></a>
           {% endif %}
           {% if feature.sample_html %}
             {{ feature.sample_html }}

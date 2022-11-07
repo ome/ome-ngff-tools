@@ -8,11 +8,11 @@
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
     issue_url: https://github.com/hms-dbmi/vizarr/pull/71
   napari:
-    supported: yes
+    notes: "Not clear if multiple resolution levels are being loaded and displayed"
   MoBIE:
     notes: "Image opens but the viewer is black!"
   neuroglancer:
-    supported: yes
+    notes: "Not clear if multiple resolution levels are being loaded and displayed"
   webknosses:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
@@ -174,6 +174,7 @@
   napari:
     supported: no
     opens: no
+    issue_url: https://github.com/ome/napari-ome-zarr/issues/71
   MoBIE:
     supported: no
     opens: no
