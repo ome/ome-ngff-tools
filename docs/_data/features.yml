@@ -13,7 +13,7 @@
     notes: "Image opens but the viewer is black!"
   neuroglancer:
     notes: "Not clear if multiple resolution levels are being loaded and displayed"
-  webknosses:
+  webknossos:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
   OMERO:
@@ -40,7 +40,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknosses:
+  webknossos:
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/6570
@@ -64,7 +64,7 @@
     notes: "Fails with Error parsing zarr metadata: Error parsing 'dtype' property: Unsupported numpy data type: >u1"
   vtk-itk-viewer:
     supported: yes
-  webknosses:
+  webknossos:
     supported: yes
     viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/multiscalesfnot2/view?token=wXBnS_9NQ_TiGagtiX1ysg
   OMERO:
@@ -87,7 +87,7 @@
     supported: no
     opens: yes
     issue_url: https://github.com/InsightSoftwareConsortium/itkwidgets/issues/548#issuecomment-1277788651
-  webknosses:
+  webknossos:
     supported: no
     opens: no
   OMERO:
@@ -108,7 +108,7 @@
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknosses:
+  webknossos:
     supported: yes
   OMERO:
     supported: no
@@ -132,7 +132,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknosses:
+  webknossos:
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/6538
@@ -158,11 +158,11 @@
   vtk-itk-viewer:
     supported: no
     opens: no
-  webknosses:
+  webknossos:
     supported: no
     opens: no
   OMERO:
-    supported: yes
+    supported: no
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
@@ -186,7 +186,7 @@
   vtk-itk-viewer:
     supported: no
     opens: no
-  webknosses:
+  webknossos:
     supported: no
     opens: no
   OMERO:
@@ -211,12 +211,12 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknosses:
+  webknossos:
     supported: no
     opens: no
     notes: "Could not extract XYZ axis order mapping. Does the data have x, y and z axes, stated in multiscales metadata? <~ invalid xyz axis order: 2,1,-1."
   OMERO:
-    supported: yes
+    notes: "Image opens but only shows one of the z-sections"
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?
@@ -235,7 +235,7 @@
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknosses:
+  webknossos:
     supported: yes
     viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/omeroinfo/view?token=8QbWDRXlCP9aWxxQUHzayQ
     issue_url: https://github.com/scalableminds/webknossos/issues/6577
@@ -259,7 +259,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknosses:
+  webknossos:
     supported: no
     opens: no
     issue_url: https://github.com/scalableminds/webknossos/issues/6600
@@ -284,7 +284,7 @@
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknosses:
+  webknossos:
     supported: no
     opens: yes
   OMERO:
@@ -312,7 +312,7 @@
     supported: no
     opens: yes
     notes: Not possible to assess translation. Can't overlay multiple images
-  webknosses:
+  webknossos:
     supported: no
     opens: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
@@ -337,7 +337,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknosses:
+  webknossos:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
   OMERO:
@@ -359,7 +359,7 @@
     opens: yes
   vtk-itk-viewer:
     supported: yes
-  webknosses:
+  webknossos:
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/6578
@@ -381,7 +381,7 @@
     opens: yes
   vtk-itk-viewer:
     supported: yes
-  webknosses:
+  webknossos:
     supported: no
     opens: yes
     issue_url: https://github.com/scalableminds/webknossos/issues/4985

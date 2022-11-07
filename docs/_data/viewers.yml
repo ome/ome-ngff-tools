@@ -12,7 +12,7 @@
   id: neuroglancer
   viewer_url: 'https://neuroglancer-demo.appspot.com/#!{"layers":[{"source":"zarr://'
   viewer_url_postfix: '","name":"OME-NGFF"}]}'
-- webknosses:
-  id: webknosses
+- webknossos:
+  id: webknossos
 - OMERO:
   id: OMERO

@@ -92,7 +92,7 @@ The following versions of each viewer were used in testing:
         <td class="{% if feature[viewer].supported %}supported{% elsif feature[viewer].opens == false %}fails{% elsif feature[viewer].opens %}ignored{% else %}missing{% endif %}">
 
           {% if feature[viewer].viewer_url %}
-            <!-- e.g. webknosses or OMERO might have URLs for imported images -->
+            <!-- e.g. webknossos or OMERO might have URLs for imported images -->
             <a href="{{ feature[viewer].viewer_url }}" target="_blank" title="View the sample file in this viewer in a new tab">
               <img src="assets/img/icon_eye.svg" />
             </a>
