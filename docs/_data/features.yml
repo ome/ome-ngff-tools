@@ -56,6 +56,8 @@
     supported: no
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
+  MoBIE:
+    notes: "Image opens but the image is pixelated"
   napari:
     supported: yes
   neuroglancer:
@@ -78,7 +80,6 @@
     supported: yes
   MoBIE:
     supported: yes
-    opens: yes
   neuroglancer:
     supported: no
     opens: no
@@ -228,7 +229,8 @@
   napari:
     supported: yes
   MoBIE:
-    supported: yes
+    notes: "Image opens but the scale bar is indicated as Pixels instead of micrometer."
+    issue_url: https://github.com/mobie/mobie-viewer-fiji/issues/894
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
