@@ -229,6 +229,7 @@
     supported: yes
   MoBIE:
     notes: "Image opens but the scale bar is indicated as Pixels instead of micrometer."
+    issue_url: https://github.com/mobie/mobie-viewer-fiji/issues/894
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
