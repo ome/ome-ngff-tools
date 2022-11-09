@@ -1,6 +1,4 @@
 
-<h1>OME-NGFF tools</h1>
-
 The following versions of each viewer were used in testing:
 
 - <a href="https://napari.org">napari</a> 0.4.16 with plugin <a href="https://github.com/ome/napari-ome-zarr/">napari-ome-zarr</a> 0.5.2 and <a href="https://github.com/ome/ome-zarr-py/">ome-zarr</a> 0.6.0.
