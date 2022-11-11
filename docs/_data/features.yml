@@ -363,9 +363,7 @@
   vtk-itk-viewer:
     supported: yes
   webknossos:
-    supported: no
-    opens: yes
-    issue_url: https://github.com/scalableminds/webknossos/issues/6578
+    supported: yes
   OMERO:
     supported: yes
 
