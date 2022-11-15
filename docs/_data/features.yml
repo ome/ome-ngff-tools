@@ -238,8 +238,7 @@
     supported: yes
   webknossos:
     supported: yes
-    viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/omeroinfo/view?token=8QbWDRXlCP9aWxxQUHzayQ
-    issue_url: https://github.com/scalableminds/webknossos/issues/6577
+    viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_unit.zarr/view?token=KPCLCYXHd50RR7aAULPknA
   OMERO:
     supported: no
     opens: yes
@@ -364,6 +363,7 @@
     supported: yes
   webknossos:
     supported: yes
+    viewer_url: https://webknossos.org/datasets/308ffc5547d41748/multi-channel_idr0101/view?token=7_8Gd4gVytrTVU89c5vCag
   OMERO:
     supported: yes
 
