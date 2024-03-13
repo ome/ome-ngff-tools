@@ -41,9 +41,9 @@
     supported: no
     opens: yes
   webknossos:
-    supported: no
+    supported: yes
     opens: yes
-    issue_url: https://github.com/scalableminds/webknossos/issues/6570
+    notes: "rdefs are not supported"
   OMERO:
     supported: no
     opens: yes
@@ -133,9 +133,8 @@
     supported: no
     opens: yes
   webknossos:
-    supported: no
+    supported: yes
     opens: yes
-    issue_url: https://github.com/scalableminds/webknossos/issues/6538
   OMERO:
     supported: no
     opens: yes
