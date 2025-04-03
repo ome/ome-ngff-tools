@@ -6,7 +6,7 @@
     opens: no
     supported: no
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
-    issue_url: https://github.com/hms-dbmi/vizarr/pull/71
+    issue_url: https://github.com/hms-dbmi/vizarr/issues/60
   napari:
     notes: "Not clear if multiple resolution levels are being loaded and displayed"
   MoBIE:
@@ -120,9 +120,7 @@
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0052A/5514375.zarr
   sample_name: 5514375.zarr
   vizarr:
-    supported: no
-    opens: yes
-    issue_url: https://github.com/hms-dbmi/vizarr/issues/45
+    supported: yes
   napari:
     supported: yes
   MoBIE:
@@ -170,9 +168,8 @@
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.2/idr0070A/9838562.zarr
   sample_name: 9838562.zarr
   vizarr:
-    supported: no
-    opens: no
-    issue_url: https://github.com/hms-dbmi/vizarr/issues/149
+    supported: yes
+    notes: User is redirected to ome-ngff-validator which shows links to open each image in vizarr
   napari:
     supported: no
     opens: no
@@ -251,7 +248,9 @@
   sample_html: translate onto <a href="https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
   vizarr:
     supported: no
-    opens: yes
+    opens: no
+    issue_url: https://github.com/hms-dbmi/vizarr/issues/271
+    notes: 3D translation causes image to disappear
   napari:
     supported: yes
   MoBIE:
@@ -328,6 +327,7 @@
   vizarr:
     supported: no
     opens: yes
+    issue_url: https://github.com/hms-dbmi/vizarr/pull/259
   napari:
     supported: yes
     opens: yes
