@@ -8,7 +8,7 @@
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
     issue_url: https://github.com/hms-dbmi/vizarr/issues/60
   napari:
-    notes: "Not clear if multiple resolution levels are being loaded and displayed"
+    notes: "Image appears to load and display OK, but very quickly crashes on zooming etc."
   MoBIE:
     notes: "Image opens but the viewer is black!"
   neuroglancer:
@@ -148,6 +148,7 @@
     notes: Only the lowest resolution of a Plate is shown. Clicking a Well loads it in a new window
   napari:
     supported: yes
+    notes: "Plate appears to load and display OK, but crashes on zooming in."
   MoBIE:
     supported: no
     opens: no
