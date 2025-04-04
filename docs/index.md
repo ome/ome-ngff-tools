@@ -27,9 +27,26 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
   .missing {
     background: grey;
   }
-  .feature img, .sample img {
+  .feature img {
     opacity: 0.5;
   }
+
+  .icon {
+      width: 24px;
+      height: 24px;
+  }
+  .no_border {
+      border: none;
+      background: none;
+      padding: 0;
+  }
+  .shake {
+      animation: 0.1s linear 0s infinite alternate seesaw;
+  }
+
+  @-webkit-keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
+  @keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
+</style>
 
 </style>
 
@@ -79,9 +96,12 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
         </td>
         <td class="sample">
           {% if feature.sample_url and feature.sample_name %}
-            <a href="{{ feature.sample_url }}" >{{ feature.sample_name }}</a>
+            {{ feature.sample_name }}
+            <button class="no_border" title="Copy S3 URL to clipboard" onclick="copyTextToClipboard('{{ feature.sample_url }}')">
+              <img src="assets/img/copy.png" width="24px" height="24px" />
+            </button>
             <a href="https://ome.github.io/ome-ngff-validator/?source={{ feature.sample_url }}" target="_blank" title="Open in ome-ngff-validator">
-              <img src="assets/img/icon_check.png" width="20px" height="20px" /></a>
+              <img src="assets/img/ome_logo-16x16.png" width="20px" height="20px" /></a>
           {% endif %}
           {% if feature.sample_html %}
             {{ feature.sample_html }}
@@ -120,3 +140,40 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
     {% endfor %}
   </tbody>
 </table>
+
+<script>
+
+
+function copyTextToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    // Place in the top-left corner of screen regardless of scroll position.
+    textArea.style.position = 'fixed';
+
+    textArea.value = text;
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    var successful;
+    try {
+        successful = document.execCommand('copy');
+    } catch (err) {
+        console.log('Oops, unable to copy');
+    }
+    document.body.removeChild(textArea);
+
+    if (successful) {
+        // show user that copying happened - shake for 1 second
+        let target = event.target;
+        let html = target.innerHTML;
+        target.classList.add("shake");
+        setTimeout(() => {
+            // reset after 1 second
+            target.classList.remove("shake");
+        }, 1000)
+    } else {
+        console.log("Copying failed")
+    }
+}
+</script>
