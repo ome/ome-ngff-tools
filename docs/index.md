@@ -5,7 +5,11 @@ The following versions of each viewer were used in testing:
   - Open via command line: `napari https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr`
   - Use napari console to open additional image: `viewer.open("https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr", plugin="napari-ome-zarr")`
 - <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> April 2025. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
-- <a href="https://github.com/mobie/mobie-viewer-fiji/">MoBIE</a> plugin for ImageJ/Fiji (mobie-viewer-fiji v6.2.0, mobie-io v4.0.1). See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions and how to open Zarr files. Hint: Press ``p`` to bring the rendering settings controls.
+- <a href="https://imagej.net/plugins/bdv/">BigDataViewer</a> comes with Fiji.
+  - Open with: `Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer`.
+- <a href="https://github.com/mobie/mobie-viewer-fiji/">MoBIE</a> plugin for ImageJ/Fiji (mobie-viewer-fiji v6.2.0, mobie-io v4.0.1).
+  - See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions and how to open Zarr files. Hint: Press ``p`` to bring the rendering settings controls.
+  - To open labels images: `Plugins > MoBIE > Open > Open OME ZARR` then enter image `URL.zarr` and `URL.zarr/labels/name` (Open the image in ome-ngff-validator first and browse to labels to get the correct URL).
 - <a href="https://itkwidgets.readthedocs.io/en/latest">itkwidgets</a>. Use in a python notebook, or open via URL: See <a href="https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr">example</a>.
 - <a href="https://github.com/google/neuroglancer">neuroglancer</a>.
 - <a href="https://webknossos.org">webKnossos</a> version 24.03.0.

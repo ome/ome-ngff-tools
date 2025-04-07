@@ -9,8 +9,10 @@
     issue_url: https://github.com/hms-dbmi/vizarr/issues/60
   napari:
     notes: "Image appears to load and display OK, but very quickly crashes on zooming etc."
+  BigDataViewer:
+    supported: yes
   MoBIE:
-    notes: "Image opens but the viewer is black!"
+    supported: yes
   neuroglancer:
     notes: "Not clear if multiple resolution levels are being loaded and displayed"
   webknossos:
@@ -31,6 +33,9 @@
   napari:
     opens: yes
     supported: yes
+  BigDataViewer:
+    supported: no
+    opens: yes
   MoBIE:
     supported: no
     opens: yes
@@ -57,6 +62,8 @@
     supported: no
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
+  BigDataViewer:
+    supported: yes
   MoBIE:
     supported: yes
   napari:
@@ -79,8 +86,10 @@
     supported: yes
   napari:
     supported: yes
+  BigDataViewer:
+    supported: no
   MoBIE:
-    supported: yes
+    supported: no
   neuroglancer:
     supported: no
     opens: no
@@ -101,6 +110,8 @@
   vizarr:
     supported: yes
   napari:
+    supported: yes
+  BigDataViewer:
     supported: yes
   MoBIE:
     supported: yes
@@ -123,8 +134,12 @@
     supported: yes
   napari:
     supported: yes
+  BigDataViewer:
+    supported: no
+    opens: yes
   MoBIE:
     supported: yes
+    notes: See instructions above for loading labels
   neuroglancer:
     supported: no
     opens: yes
@@ -149,9 +164,11 @@
   napari:
     supported: yes
     notes: "Plate appears to load and display OK, but crashes on zooming in."
-  MoBIE:
+  BigDataViewer:
     supported: no
-    opens: no
+  MoBIE:
+    supported: yes
+    notes: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0056B/7361.zarr Opens but can't pan/zoom. Others don't open
   neuroglancer:
     supported: no
     opens: no
@@ -175,9 +192,13 @@
     supported: no
     opens: no
     issue_url: https://github.com/ome/napari-ome-zarr/issues/71
+  BigDataViewer:
+    supported: yes
+    notes: "If data is local, you are asked to select an image to open. Remote: not tested for v0.4 data, fails for other versions"
   MoBIE:
     supported: no
     opens: no
+    notes: No remote v0.4 data available to test
   neuroglancer:
     supported: no
     opens: no
@@ -201,9 +222,14 @@
   napari:
     supported: no
     opens: yes
+  BigDataViewer:
+    supported: no
+    opens: no
+    notes: "Fails with: java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 3"
   MoBIE:
     supported: no
     opens: no
+    notes: "Fails with: java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 3"
   neuroglancer:
     supported: no
     opens: yes
@@ -227,6 +253,8 @@
     opens: yes
     notes: Vizarr doesn't display a scalebar or support scaling info.
   napari:
+    supported: yes
+  BigDataViewer:
     supported: yes
   MoBIE:
     supported: yes
@@ -253,9 +281,14 @@
     notes: 3D translation causes image to disappear
   napari:
     supported: yes
+  BigDataViewer:
+    supported: no
+    opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   MoBIE:
     supported: no
     opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   vtk-itk-viewer:
     supported: no
     opens: yes
@@ -278,9 +311,10 @@
     supported: no
     opens: yes
     issue_url: https://github.com/ome/napari-ome-zarr/issues/73
+  BigDataVeiwer:
+    supported: yes
   MoBIE:
-    supported: no
-    opens: yes
+    supported: yes
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
@@ -304,6 +338,10 @@
     supported: no
     opens: yes
     issue_url: https://github.com/ome/napari-ome-zarr/issues/73
+  BigDataViewer:
+    supported: no
+    opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   MoBIE:
     supported: no
     opens: yes
@@ -331,6 +369,9 @@
   napari:
     supported: yes
     opens: yes
+  BigDataViewer:
+    supported: no
+    opens: yes
   MoBIE:
     supported: no
     opens: yes
@@ -355,8 +396,11 @@
     supported: yes
   napari:
     supported: yes
-  MoBIE:
+  BigDataViewer:
     supported: yes
+  MoBIE:
+    supported: no
+    opens: yes
   neuroglancer:
     supported: no
     opens: yes
@@ -375,6 +419,8 @@
   vizarr:
     supported: yes
   napari:
+    supported: yes
+  BigDataViewer:
     supported: yes
   MoBIE:
     supported: yes
