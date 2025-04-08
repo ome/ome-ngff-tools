@@ -13,6 +13,8 @@
     supported: yes
   MoBIE:
     supported: yes
+  vtk-itk-viewer:
+    supported: yes
   neuroglancer:
     notes: "Not clear if multiple resolution levels are being loaded and displayed"
   webknossos:
@@ -42,8 +44,8 @@
   neuroglancer:
     supported: no
     opens: yes
-  vtk-itk-viewer:
-    supported: no
+    vtk-itk-viewer:
+      supported: no
     opens: yes
   webknossos:
     supported: yes
@@ -193,12 +195,12 @@
     opens: no
     issue_url: https://github.com/ome/napari-ome-zarr/issues/71
   BigDataViewer:
-    supported: yes
-    notes: "If data is local, you are asked to select an image to open. Remote: not tested for v0.4 data, fails for other versions"
+    supported: no
+    opens: no
+    notes: "If data is local, you can select a single image to open. Can't open remote data."
   MoBIE:
     supported: no
     opens: no
-    notes: No remote v0.4 data available to test
   neuroglancer:
     supported: no
     opens: no
@@ -428,7 +430,8 @@
     supported: no
     opens: yes
   vtk-itk-viewer:
-    supported: yes
+    supported: no
+    opens: yes
   webknossos:
     supported: yes
     viewer_url: https://webknossos.org/datasets/Demo_Organization/13457227.zarr/view
