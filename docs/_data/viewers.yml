@@ -1,12 +1,6 @@
-- napari:
-  id: napari
 - vizarr:
   id: vizarr
   viewer_url: https://hms-dbmi.github.io/vizarr/?source=
-- BigDataViewer:
-  id: BigDataViewer
-- MoBIE:
-  id: MoBIE
 - vtk-itk-viewer:
   id: vtk-itk-viewer
   viewer_url: https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=
@@ -16,5 +10,11 @@
   viewer_url_postfix: '","name":"OME-NGFF"}]}'
 - webknossos:
   id: webknossos
+- napari:
+  id: napari
+- BigDataViewer:
+  id: BigDataViewer
+- MoBIE:
+  id: MoBIE
 - OMERO:
   id: OMERO
