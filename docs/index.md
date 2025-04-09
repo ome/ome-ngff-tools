@@ -20,18 +20,21 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
 
 <style>
   .supported {
-    background: green;
+    background: #8BC34A;
   }
   .fails {
-    background: red;
+    background: #f44336c9;
   }
   .ignored {
-    background: yellow;
+    background: #ffeb3ba1;
   }
   .missing {
-    background: grey;
+    background: #cccccc;
   }
   .feature img {
+    opacity: 0.5;
+  }
+  .supported img, .fails img, .missing img, .ignored img {
     opacity: 0.5;
   }
 
@@ -46,6 +49,11 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
   }
   .shake {
       animation: 0.1s linear 0s infinite alternate seesaw;
+  }
+
+  td, th {
+    max-width: 130px;
+    min-width: 130px;
   }
 
   @-webkit-keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }

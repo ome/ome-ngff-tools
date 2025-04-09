@@ -16,7 +16,7 @@
   vtk-itk-viewer:
     supported: yes
   neuroglancer:
-    notes: "Not clear if multiple resolution levels are being loaded and displayed"
+    supported: yes
   webknossos:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
