@@ -5,6 +5,7 @@ The following versions of each viewer were used in testing:
   - Open via command line: `napari https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr`
   - Use napari console to open additional image: `viewer.open("https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr", plugin="napari-ome-zarr")`
 - <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> April 2025. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
+- [Vol-E](https://github.com/allen-cell-animated/vole-app) 
 - <a href="https://imagej.net/plugins/bdv/">BigDataViewer</a> comes with Fiji.
   - Open with: `Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer`.
 - <a href="https://github.com/mobie/mobie-viewer-fiji/">MoBIE</a> plugin for ImageJ/Fiji (mobie-viewer-fiji v6.2.0, mobie-io v4.0.1).
@@ -58,8 +59,6 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
 
   @-webkit-keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
   @keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
-</style>
-
 </style>
 
 <h3>Key</h3>

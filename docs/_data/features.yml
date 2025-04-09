@@ -2,6 +2,8 @@
   description: Browser-based viewers need the data to be served over HTTP (with CORS enabled)
   vizarr:
     supported: yes
+  vole:
+    supported: yes
   napari:
     supported: no
   BigDataViewer:
@@ -30,6 +32,8 @@
     supported: no
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
     issue_url: https://github.com/hms-dbmi/vizarr/issues/60
+  vole:
+    supported: yes
   napari:
     notes: "Image appears to load and display OK, but very quickly crashes on zooming etc."
   BigDataViewer:
@@ -55,6 +59,10 @@
   vizarr:
     opens: yes
     supported: yes
+  vole:
+    supported: no
+    opens: yes
+    notes: "The channel labels are read from 'omero' metadata, but the colours are ignored"
   napari:
     opens: yes
     supported: yes
@@ -87,6 +95,8 @@
     supported: no
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
+  vole:
+    supported: yes
   BigDataViewer:
     supported: yes
   MoBIE:
@@ -109,6 +119,8 @@
   sample_name: 9836998.zarr
   vizarr:
     supported: yes
+  vole:
+    supported: no
   napari:
     supported: yes
   BigDataViewer:
@@ -134,6 +146,8 @@
   sample_name: 6001240.zarr
   vizarr:
     supported: yes
+  vole:
+    supported: yes
   napari:
     supported: yes
   BigDataViewer:
@@ -157,6 +171,9 @@
   sample_name: 5514375.zarr
   vizarr:
     supported: yes
+  vole:
+    supported: no
+    opens: yes
   napari:
     supported: yes
   BigDataViewer:
@@ -186,6 +203,8 @@
   vizarr:
     supported: yes
     notes: Only the lowest resolution of a Plate is shown. Clicking a Well loads it in a new window
+  vole:
+    supported: no
   napari:
     supported: yes
     notes: "Plate appears to load and display OK, but crashes on zooming in."
@@ -208,11 +227,13 @@
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.2/idr0070A/9838562.zarr
-  sample_name: 9838562.zarr
+  sample_url: https://minio-dev.openmicroscopy.org/idr/Testing/sample_files.zarr
+  sample_name: sample_files.zarr
   vizarr:
     supported: yes
     notes: User is redirected to ome-ngff-validator which shows links to open each image in vizarr
+  vole:
+    supported: no
   napari:
     supported: no
     opens: no
@@ -242,6 +263,9 @@
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0050A/4995115.zarr
   sample_name: 4995115.zarr
   vizarr:
+    supported: no
+    opens: yes
+  vole:
     supported: no
     opens: yes
   napari:
@@ -277,6 +301,8 @@
     supported: no
     opens: yes
     notes: Vizarr doesn't display a scalebar or support scaling info.
+  vole:
+    supported: yes
   napari:
     supported: yes
   BigDataViewer:
@@ -304,6 +330,10 @@
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/271
     notes: 3D translation causes image to disappear
+  vole:
+    supported: no
+    opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   napari:
     supported: yes
   BigDataViewer:
@@ -332,6 +362,9 @@
   vizarr:
     supported: no
     opens: yes
+  vole:
+    supported: no
+    opens: yes
   napari:
     supported: no
     opens: yes
@@ -357,6 +390,9 @@
   sample_name: 13457539.zarr
   sample_html: translate onto <a href="https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
   vizarr:
+    supported: no
+    opens: yes
+  vole:
     supported: no
     opens: yes
   napari:
@@ -391,6 +427,9 @@
     supported: no
     opens: yes
     issue_url: https://github.com/hms-dbmi/vizarr/pull/259
+  vole:
+    supported: no
+    opens: yes
   napari:
     supported: yes
     opens: yes
@@ -419,6 +458,8 @@
   sample_name: 13457227.zarr
   vizarr:
     supported: yes
+  vole:
+    supported: yes
   napari:
     supported: yes
   BigDataViewer:
@@ -442,6 +483,8 @@
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr
   sample_name: 13457227.zarr
   vizarr:
+    supported: yes
+  vole:
     supported: yes
   napari:
     supported: yes

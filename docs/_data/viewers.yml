@@ -1,6 +1,9 @@
 - vizarr:
   id: vizarr
   viewer_url: https://hms-dbmi.github.io/vizarr/?source=
+- vole:
+  id: vole
+  viewer_url: https://volumeviewer.allencell.org/viewer?url=
 - vtk-itk-viewer:
   id: vtk-itk-viewer
   viewer_url: https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=
