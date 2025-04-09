@@ -1,7 +1,10 @@
+- avivator:
+  id: avivator
+  viewer_url: https://avivator.gehlenborglab.org/?image_url=
 - vizarr:
   id: vizarr
   viewer_url: https://hms-dbmi.github.io/vizarr/?source=
-- vole:
+- Vol-E:
   id: vole
   viewer_url: https://volumeviewer.allencell.org/viewer?url=
 - vtk-itk-viewer:
