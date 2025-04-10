@@ -194,8 +194,8 @@
   napari:
     supported: yes
   BigDataViewer:
-    supported: no
-    opens: yes
+    supported: yes
+    notes: See instructions above for loading labels
   MoBIE:
     supported: yes
     notes: See instructions above for loading labels
@@ -231,7 +231,6 @@
     supported: no
   MoBIE:
     supported: yes
-    notes: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0056B/7361.zarr Opens but can't pan/zoom. Others don't open
   neuroglancer:
     supported: no
     opens: no
@@ -260,9 +259,8 @@
     opens: no
     issue_url: https://github.com/ome/napari-ome-zarr/issues/71
   BigDataViewer:
-    supported: no
-    opens: no
-    notes: "If data is local, you can select a single image to open. Can't open remote data."
+    supported: yes
+    notes: "In the 'Open' dialog, choose `Detect Datasets`. One or more single resolution zarr arrays can be opened, but not as a 'multiscale' image."
   MoBIE:
     supported: no
     opens: no

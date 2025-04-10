@@ -7,10 +7,12 @@ The following versions of each viewer were used in testing:
 - <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> April 2025. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
 - [Vol-E](https://github.com/allen-cell-animated/vole-app) 
 - <a href="https://imagej.net/plugins/bdv/">BigDataViewer</a> comes with Fiji.
-  - Open with: `Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer`.
+  - Open with: `Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer`. In the dialog, enter the URL and click `OK`.
+  - To include labels, enter the image URL in the dialog, then click `Detect datasets`. Expand the tree and select a labels image under `labels` AND use Cmd-click to also select the top-level parent image. With both selected, click `OK`.
 - <a href="https://github.com/mobie/mobie-viewer-fiji/">MoBIE</a> plugin for ImageJ/Fiji (mobie-viewer-fiji v6.2.0, mobie-io v4.0.1).
-  - See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions and how to open Zarr files. Hint: Press ``p`` to bring the rendering settings controls.
-  - To open labels images: `Plugins > MoBIE > Open > Open OME ZARR` then enter image `URL.zarr` and `URL.zarr/labels/name` (Open the image in ome-ngff-validator first and browse to labels to get the correct URL).
+  - See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions. Hint: Press ``p`` to bring the rendering settings controls.
+  - To open images: `Plugins > MoBIE > Open > Open OME ZARR` then enter image `URL.zarr`. If you want to include labels, also fill the labels field with `URL.zarr/labels/<name>` (Open the image in ome-ngff-validator first (OME icon in table below) and browse to labels to get the correct URL).
+  - To open Plates: `Plugins > MoBIE > Open > Open HCS Dataset`.
 - <a href="https://itkwidgets.readthedocs.io/en/latest">itkwidgets</a>. Use in a python notebook, or open via URL: See <a href="https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr">example</a>.
 - <a href="https://github.com/google/neuroglancer">neuroglancer</a>.
 - <a href="https://webknossos.org">webKnossos</a> version 24.03.0.
@@ -39,6 +41,9 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
     background: white;
     position: sticky;
     left: 0;
+    z-index: 10;
+    min-width: 200px;
+    max-width: 200px;
   }
   .supported img, .fails img, .missing img, .ignored img {
     opacity: 0.5;
