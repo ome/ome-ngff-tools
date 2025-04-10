@@ -35,6 +35,11 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
   .feature img {
     opacity: 0.5;
   }
+  .feature {
+    background: white;
+    position: sticky;
+    left: 0;
+  }
   .supported img, .fails img, .missing img, .ignored img {
     opacity: 0.5;
   }
@@ -89,7 +94,7 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
 <table>
   <thead>
     <tr>
-      <th>feature</th>
+      <th class="feature">feature</th>
       <td>sample data</td>
       {% for viewer in site.data.viewers %}
         <th>{{ viewer.id }}</th>
