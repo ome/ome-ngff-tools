@@ -4,8 +4,8 @@
 - vizarr:
   id: vizarr
   viewer_url: https://hms-dbmi.github.io/vizarr/?source=
-- Vol-E:
-  id: vole
+- vole:
+  id: Vol-E
   viewer_url: https://volumeviewer.allencell.org/viewer?url=
 - vtk-itk-viewer:
   id: vtk-itk-viewer

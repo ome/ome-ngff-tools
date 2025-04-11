@@ -4,7 +4,7 @@
     supported: yes
   vizarr:
     supported: yes
-  vole:
+  Vol-E:
     supported: yes
   napari:
     supported: no
@@ -37,7 +37,7 @@
     supported: no
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
     issue_url: https://github.com/hms-dbmi/vizarr/issues/60
-  vole:
+  Vol-E:
     supported: yes
   napari:
     notes: "Image appears to load and display OK, but very quickly crashes on zooming etc."
@@ -67,7 +67,7 @@
   vizarr:
     opens: yes
     supported: yes
-  vole:
+  Vol-E:
     supported: no
     opens: yes
     notes: "The channel labels are read from 'omero' metadata, but the colours are ignored"
@@ -105,7 +105,7 @@
     supported: no
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
-  vole:
+  Vol-E:
     supported: yes
   BigDataViewer:
     supported: yes
@@ -131,7 +131,7 @@
     supported: yes
   vizarr:
     supported: yes
-  vole:
+  Vol-E:
     supported: no
   napari:
     supported: yes
@@ -160,7 +160,7 @@
     supported: yes
   vizarr:
     supported: yes
-  vole:
+  Vol-E:
     supported: yes
   napari:
     supported: yes
@@ -188,7 +188,7 @@
     opens: yes
   vizarr:
     supported: yes
-  vole:
+  Vol-E:
     supported: no
     opens: yes
   napari:
@@ -222,7 +222,7 @@
   vizarr:
     supported: yes
     notes: Only the lowest resolution of a Plate is shown. Clicking a Well loads it in a new window
-  vole:
+  Vol-E:
     supported: no
   napari:
     supported: yes
@@ -252,7 +252,7 @@
   vizarr:
     supported: yes
     notes: User is redirected to ome-ngff-validator which shows links to open each image in vizarr
-  vole:
+  Vol-E:
     supported: no
   napari:
     supported: no
@@ -287,7 +287,7 @@
   vizarr:
     supported: no
     opens: yes
-  vole:
+  Vol-E:
     supported: no
     opens: yes
   napari:
@@ -327,7 +327,7 @@
     supported: no
     opens: yes
     notes: Vizarr doesn't display a scalebar or support scaling info.
-  vole:
+  Vol-E:
     supported: yes
   napari:
     supported: yes
@@ -360,7 +360,7 @@
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/271
     notes: 3D translation causes image to disappear
-  vole:
+  Vol-E:
     supported: no
     opens: yes
     notes: Not possible to assess translation. Can't overlay multiple images
@@ -396,7 +396,7 @@
   vizarr:
     supported: no
     opens: yes
-  vole:
+  Vol-E:
     supported: no
     opens: yes
   napari:
@@ -429,7 +429,7 @@
   vizarr:
     supported: no
     opens: yes
-  vole:
+  Vol-E:
     supported: no
     opens: yes
   napari:
@@ -467,7 +467,7 @@
     supported: no
     opens: yes
     issue_url: https://github.com/hms-dbmi/vizarr/pull/259
-  vole:
+  Vol-E:
     supported: no
     opens: yes
   napari:
@@ -500,7 +500,7 @@
     supported: yes
   vizarr:
     supported: yes
-  vole:
+  Vol-E:
     supported: yes
   napari:
     supported: yes
@@ -528,7 +528,7 @@
     supported: yes
   vizarr:
     supported: yes
-  vole:
+  Vol-E:
     supported: yes
   napari:
     supported: yes
