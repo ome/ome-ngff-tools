@@ -168,7 +168,6 @@
     supported: yes
   MoBIE:
     supported: yes
-    opens: yes
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
@@ -198,7 +197,6 @@
     notes: See instructions above for loading labels
   MoBIE:
     supported: yes
-    notes: See instructions above for loading labels
   neuroglancer:
     supported: no
     opens: yes
@@ -507,8 +505,7 @@
   BigDataViewer:
     supported: yes
   MoBIE:
-    supported: no
-    opens: yes
+    supported: yes
   neuroglancer:
     supported: no
     opens: yes
