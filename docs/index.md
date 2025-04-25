@@ -76,20 +76,10 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
 <table>
   <tbody>
   <tr>
-    <td>Feature supported</td>
-    <td class="supported"> </td>
-  </tr>
-  <tr>
-    <td>Not supported (no effect)</td>
-    <td class="ignored"> </td>
-  </tr>
-  <tr>
-    <td>Image doesn't open correctly</td>
-    <td class="fails"> </td>
-  </tr>
-  <tr>
-    <td>Not tested / not confirmed</td>
-    <td class="missing"> </td>
+    <td class="supported">Feature supported</td>
+    <td class="ignored">Not supported (no effect)</td>
+    <td class="fails">Image doesn't open correctly</td>
+    <td class="missing">Not tested / not confirmed</td>
   </tr>
   </tbody>
 </table>

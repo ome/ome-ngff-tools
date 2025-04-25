@@ -1,29 +1,3 @@
-- name: web viewer
-  description: Browser-based viewers need the data to be served over HTTP (with CORS enabled)
-  avivator:
-    supported: yes
-  vizarr:
-    supported: yes
-  Vol-E:
-    supported: yes
-  napari:
-    supported: no
-  BigDataViewer:
-    supported: no
-  MoBIE:
-    supported: no
-  vtk-itk-viewer:
-    supported: yes
-  neuroglancer:
-    supported: yes
-  webknossos:
-    supported: no
-    opens: yes
-    notes: "Webknossos is a browser-based viewer but data is first uploaded to the server"
-    viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
-  OMERO:
-    supported: no
-
 
 - name: Z downsample
   description: Does the viewer handle image pyramids which have been down-sampled in the Z axis?
