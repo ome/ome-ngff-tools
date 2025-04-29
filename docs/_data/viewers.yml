@@ -14,8 +14,8 @@
   id: neuroglancer
   viewer_url: 'https://neuroglancer-demo.appspot.com/#!{"layers":[{"source":"zarr://'
   viewer_url_postfix: '","name":"OME-NGFF"}]}'
-- webknossos:
-  id: webknossos
+- WEBKNOSSOS:
+  id: WEBKNOSSOS
 - napari:
   id: napari
 - BigDataViewer:

@@ -23,7 +23,7 @@
     supported: yes
   neuroglancer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
   OMERO:
@@ -60,7 +60,7 @@
     vtk-itk-viewer:
       supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     opens: yes
     notes: "rdefs are not supported"
@@ -91,7 +91,7 @@
     notes: "Fails with Error parsing zarr metadata: Error parsing 'dtype' property: Unsupported numpy data type: >u1"
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/multiscalesfnot2/view?token=wXBnS_9NQ_TiGagtiX1ysg
   OMERO:
@@ -120,9 +120,10 @@
     supported: no
     opens: yes
     issue_url: https://github.com/InsightSoftwareConsortium/itkwidgets/issues/548#issuecomment-1277788651
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
+    notes: "Failed to parse or validate json against data schema Error when exploring as layer set: Empty"
   OMERO:
     supported: yes
 
@@ -146,7 +147,7 @@
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
   OMERO:
     supported: no
@@ -177,7 +178,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     opens: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_20240314.zarr?token=equ22C3ELBC6y9aS4pW3cw
@@ -209,7 +210,7 @@
   vtk-itk-viewer:
     supported: no
     opens: no
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
   OMERO:
@@ -243,7 +244,7 @@
   vtk-itk-viewer:
     supported: no
     opens: no
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
   OMERO:
@@ -279,10 +280,10 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
-    notes: "Could not extract XYZ axis order mapping. Does the data have x, y and z axes, stated in multiscales metadata? <~ invalid xyz axis order: 2,1,-1."
+    notes: "Error when exploring as layer set: Could not extract common voxel size from layers <~ detected mags are not unique, found List((1, 1, 2), (2, 2, 1), (2, 2, 2))"
   OMERO:
     notes: "All images imported but sample image is corrupted. See issue"
     issue_url: https://github.com/ome/ZarrReader/issues/44
@@ -311,7 +312,7 @@
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_unit.zarr/view?token=KPCLCYXHd50RR7aAULPknA
   OMERO:
@@ -349,7 +350,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
     issue_url: https://github.com/scalableminds/webknossos/issues/6600
@@ -383,7 +384,7 @@
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: yes
   OMERO:
@@ -422,7 +423,7 @@
     supported: no
     opens: yes
     notes: Not possible to assess translation. Can't overlay multiple images
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
@@ -457,7 +458,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
   OMERO:
@@ -485,7 +486,7 @@
     opens: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/multi-channel_idr0101/view?token=7_8Gd4gVytrTVU89c5vCag
   OMERO:
@@ -513,7 +514,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/Demo_Organization/13457227.zarr/view
   OMERO:
