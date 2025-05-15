@@ -376,7 +376,7 @@
     supported: no
     opens: yes
     issue_url: https://github.com/ome/napari-ome-zarr/issues/73
-  BigDataVeiwer:
+  BigDataViewer:
     supported: yes
   MoBIE:
     supported: yes

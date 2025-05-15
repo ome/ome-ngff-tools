@@ -16,10 +16,12 @@
   viewer_url_postfix: '","name":"OME-NGFF"}]}'
 - WEBKNOSSOS:
   id: WEBKNOSSOS
+  widercol: true
 - napari:
   id: napari
 - BigDataViewer:
   id: BigDataViewer
+  widercol: true
 - MoBIE:
   id: MoBIE
 - OMERO:

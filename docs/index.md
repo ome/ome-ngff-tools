@@ -66,6 +66,9 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
     max-width: 130px;
     min-width: 130px;
   }
+  .wider {
+    min-width: 150px;
+  }
 
   @-webkit-keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
   @keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
@@ -92,7 +95,7 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
       <th class="feature">feature</th>
       <td>sample data</td>
       {% for viewer in site.data.viewers %}
-        <th>{{ viewer.id }}</th>
+        <th {% if feature.widercol %} class="wider" {% endif %}>{{ viewer.id }}</th>
       {% endfor %}
     </tr>
   </thead>
