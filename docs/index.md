@@ -8,7 +8,7 @@ The following versions of each viewer were used in testing:
 - [Vol-E](https://github.com/allen-cell-animated/vole-app) 
 - <a href="https://imagej.net/plugins/bdv/">BigDataViewer</a> comes with Fiji. Jar versions include bigdataviewer_fiji-6.4.1.jar, bigdataviewer-core-10.6.4, bigdataviewer-image-loaders-0.9.0, bigdataviewer-n5-1.0.2.jar.
   - Open with: `Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer`. In the dialog, enter the URL and click `OK`.
-  - To include labels, enter the image URL in the dialog, then click `Detect datasets`. Expand the tree and select a labels image under `labels` AND use Cmd-click to also select the top-level parent image. With both selected, click `OK`.
+  - To include labels, enter the image URL in the dialog, then click `Detect datasets`. Expand the tree and select an image under `labels` AND use Cmd-click to also select the top-level parent image. With both selected, click `OK`.
 - <a href="https://github.com/mobie/mobie-viewer-fiji/">MoBIE</a> plugin for ImageJ/Fiji (mobie-viewer-fiji v6.3.1, mobie-io v4.0.3).
   - See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions. Hint: Press ``p`` to bring the rendering settings controls.
   - To open images: `Plugins > MoBIE > Open > Open OME ZARR` then enter image `URL.zarr`. If you want to include labels, also fill the labels field with `URL.zarr/labels/<name>` (Open the image in ome-ngff-validator first (OME icon in table below) and browse to labels to get the correct URL).
