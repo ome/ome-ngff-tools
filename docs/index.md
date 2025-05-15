@@ -88,14 +88,14 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
 </table>
 
   
-
+<div style="float: right">Scroll right for more viewers -></div>
 <table>
   <thead>
     <tr>
       <th class="feature">feature</th>
       <td>sample data</td>
       {% for viewer in site.data.viewers %}
-        <th {% if feature.widercol %} class="wider" {% endif %}>{{ viewer.id }}</th>
+        <th {% if viewer.widercol %} class="wider" {% endif %}>{{ viewer.id }}</th>
       {% endfor %}
     </tr>
   </thead>
