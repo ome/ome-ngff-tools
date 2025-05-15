@@ -32,7 +32,7 @@
 
 
 - name: omero info
-  description: Does the viewer use the 'omero' metadata to set channel colours, names and rendering levels?
+  description: Does the viewer use the 'omero' metadata to set channel colors, names and rendering levels?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
   sample_name: 6001240.zarr
   avivator:
@@ -44,7 +44,7 @@
   Vol-E:
     supported: no
     opens: yes
-    notes: "The channel labels are read from 'omero' metadata, but the colours are ignored"
+    notes: "The channel labels are read from 'omero' metadata, but the colors are ignored"
   napari:
     opens: yes
     supported: yes
