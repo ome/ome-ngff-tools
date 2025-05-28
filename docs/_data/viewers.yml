@@ -1,10 +1,12 @@
-- napari:
-  id: napari
+- avivator:
+  id: avivator
+  viewer_url: https://avivator.gehlenborglab.org/?image_url=
 - vizarr:
   id: vizarr
   viewer_url: https://hms-dbmi.github.io/vizarr/?source=
-- MoBIE:
-  id: MoBIE
+- vole:
+  id: Vol-E
+  viewer_url: https://volumeviewer.allencell.org/viewer?url=
 - vtk-itk-viewer:
   id: vtk-itk-viewer
   viewer_url: https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=
@@ -12,7 +14,15 @@
   id: neuroglancer
   viewer_url: 'https://neuroglancer-demo.appspot.com/#!{"layers":[{"source":"zarr://'
   viewer_url_postfix: '","name":"OME-NGFF"}]}'
-- webknossos:
-  id: webknossos
+- WEBKNOSSOS:
+  id: WEBKNOSSOS
+  widercol: true
+- napari:
+  id: napari
+- BigDataViewer:
+  id: BigDataViewer
+  widercol: true
+- MoBIE:
+  id: MoBIE
 - OMERO:
   id: OMERO

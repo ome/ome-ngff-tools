@@ -1,19 +1,29 @@
+
 - name: Z downsample
   description: Does the viewer handle image pyramids which have been down-sampled in the Z axis?
   sample_url: https://minio-dev.openmicroscopy.org/idr/v0.4/idr0077/9836832_z_dtype_fix.zarr
   sample_name: 9836832.zarr
+  avivator:
+    supported: no
+    opens: no
   vizarr:
     opens: no
     supported: no
     notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
-    issue_url: https://github.com/hms-dbmi/vizarr/pull/71
+    issue_url: https://github.com/hms-dbmi/vizarr/issues/60
+  Vol-E:
+    supported: yes
   napari:
-    notes: "Not clear if multiple resolution levels are being loaded and displayed"
+    notes: "Image appears to load and display OK, but very quickly crashes on zooming etc."
+  BigDataViewer:
+    supported: yes
   MoBIE:
-    notes: "Image opens but the viewer is black!"
+    supported: yes
+  vtk-itk-viewer:
+    supported: yes
   neuroglancer:
-    notes: "Not clear if multiple resolution levels are being loaded and displayed"
-  webknossos:
+    supported: yes
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
   OMERO:
@@ -22,25 +32,35 @@
 
 
 - name: omero info
-  description: Does the viewer use the 'omero' metadata to set channel colours, names and rendering levels?
+  description: Does the viewer use the 'omero' metadata to set channel colors, names and rendering levels?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
   sample_name: 6001240.zarr
+  avivator:
+    supported: no
+    opens: yes
   vizarr:
     opens: yes
     supported: yes
+  Vol-E:
+    supported: no
+    opens: yes
+    notes: "The channel labels are read from 'omero' metadata, but the colors are ignored"
   napari:
     opens: yes
     supported: yes
+  BigDataViewer:
+    supported: no
+    opens: yes
   MoBIE:
     supported: no
     opens: yes
   neuroglancer:
     supported: no
     opens: yes
-  vtk-itk-viewer:
-    supported: no
+    vtk-itk-viewer:
+      supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     opens: yes
     notes: "rdefs are not supported"
@@ -53,19 +73,25 @@
   description: Can the viewer handle pyramids when the scale factor between levels is not equal to 2?
   sample_url: https://minio-dev.openmicroscopy.org/idr/v0.4/idr0082/9846318.zarr/0
   sample_name: 9846318.zarr/0
+  avivator:
+    supported: no
   vizarr:
     supported: no
     opens: no
     issue_url: https://github.com/hms-dbmi/vizarr/issues/101
+  Vol-E:
+    supported: yes
+  BigDataViewer:
+    supported: yes
   MoBIE:
-    notes: "Image opens but the image is pixelated"
+    supported: yes
   napari:
     supported: yes
   neuroglancer:
     notes: "Fails with Error parsing zarr metadata: Error parsing 'dtype' property: Unsupported numpy data type: >u1"
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/multiscalesfnot2/view?token=wXBnS_9NQ_TiGagtiX1ysg
   OMERO:
@@ -75,12 +101,18 @@
   description: Are the axes names respected? Are 'z', 'c' & 't' axes handled correctly?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr
   sample_name: 9836998.zarr
+  avivator:
+    supported: yes
   vizarr:
     supported: yes
+  Vol-E:
+    supported: no
   napari:
     supported: yes
+  BigDataViewer:
+    supported: no
   MoBIE:
-    supported: yes
+    supported: no
   neuroglancer:
     supported: no
     opens: no
@@ -88,9 +120,10 @@
     supported: no
     opens: yes
     issue_url: https://github.com/InsightSoftwareConsortium/itkwidgets/issues/548#issuecomment-1277788651
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
+    notes: "Failed to parse or validate json against data schema Error when exploring as layer set: Empty"
   OMERO:
     supported: yes
 
@@ -98,18 +131,23 @@
   description: Are the axes names and units respected?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
   sample_name: 6001240.zarr
+  avivator:
+    supported: yes
   vizarr:
+    supported: yes
+  Vol-E:
     supported: yes
   napari:
     supported: yes
+  BigDataViewer:
+    supported: yes
   MoBIE:
     supported: yes
-    opens: yes
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
   OMERO:
     supported: no
@@ -119,12 +157,19 @@
   description: Does the viewer read and display labels nested within the image container?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0052A/5514375.zarr
   sample_name: 5514375.zarr
-  vizarr:
+  avivator:
     supported: no
     opens: yes
-    issue_url: https://github.com/hms-dbmi/vizarr/issues/45
+  vizarr:
+    supported: yes
+  Vol-E:
+    supported: no
+    opens: yes
   napari:
     supported: yes
+  BigDataViewer:
+    supported: yes
+    notes: See instructions above for loading labels
   MoBIE:
     supported: yes
   neuroglancer:
@@ -133,7 +178,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     opens: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_20240314.zarr?token=equ22C3ELBC6y9aS4pW3cw
@@ -145,21 +190,27 @@
   description: Does the viewer display an OME-NGFF plate?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0001A/2551.zarr
   sample_name: idr0001
+  avivator:
+    supported: no
   vizarr:
     supported: yes
     notes: Only the lowest resolution of a Plate is shown. Clicking a Well loads it in a new window
+  Vol-E:
+    supported: no
   napari:
     supported: yes
-  MoBIE:
+    notes: "Plate appears to load and display OK, but crashes on zooming in."
+  BigDataViewer:
     supported: no
-    opens: no
+  MoBIE:
+    supported: yes
   neuroglancer:
     supported: no
     opens: no
   vtk-itk-viewer:
     supported: no
     opens: no
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
   OMERO:
@@ -167,16 +218,22 @@
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.2/idr0070A/9838562.zarr
-  sample_name: 9838562.zarr
-  vizarr:
+  sample_url: https://minio-dev.openmicroscopy.org/idr/Testing/sample_files.zarr
+  sample_name: sample_files.zarr
+  avivator:
     supported: no
-    opens: no
-    issue_url: https://github.com/hms-dbmi/vizarr/issues/149
+  vizarr:
+    supported: yes
+    notes: User is redirected to ome-ngff-validator which shows links to open each image in vizarr
+  Vol-E:
+    supported: no
   napari:
     supported: no
     opens: no
     issue_url: https://github.com/ome/napari-ome-zarr/issues/71
+  BigDataViewer:
+    supported: yes
+    notes: "In the 'Open' dialog, choose `Detect Datasets`. One or more single resolution zarr arrays can be opened, but not as a 'multiscale' image."
   MoBIE:
     supported: no
     opens: no
@@ -187,7 +244,7 @@
   vtk-itk-viewer:
     supported: no
     opens: no
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
   OMERO:
@@ -197,25 +254,36 @@
   description: Does the viewer open any images beyond the first item in the 'multiscales' list?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0050A/4995115.zarr
   sample_name: 4995115.zarr
+  avivator:
+    supported: no
+    opens: yes
   vizarr:
+    supported: no
+    opens: yes
+  Vol-E:
     supported: no
     opens: yes
   napari:
     supported: no
     opens: yes
+  BigDataViewer:
+    supported: no
+    opens: no
+    notes: "Fails with: java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 3"
   MoBIE:
     supported: no
     opens: no
+    notes: "Fails with: java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 3"
   neuroglancer:
     supported: no
     opens: yes
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
-    notes: "Could not extract XYZ axis order mapping. Does the data have x, y and z axes, stated in multiscales metadata? <~ invalid xyz axis order: 2,1,-1."
+    notes: "Error when exploring as layer set: Could not extract common voxel size from layers <~ detected mags are not unique, found List((1, 1, 2), (2, 2, 1), (2, 2, 2))"
   OMERO:
     notes: "All images imported but sample image is corrupted. See issue"
     issue_url: https://github.com/ome/ZarrReader/issues/44
@@ -224,20 +292,27 @@
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
   sample_name: 6001240.zarr
+  avivator:
+    supported: no
+    opens: yes
+    notes: Avivator doesn't display a scalebar or support scaling info.
   vizarr:
     supported: no
     opens: yes
     notes: Vizarr doesn't display a scalebar or support scaling info.
+  Vol-E:
+    supported: yes
   napari:
     supported: yes
+  BigDataViewer:
+    supported: yes
   MoBIE:
-    notes: "Image opens but the scale bar is indicated as Pixels instead of micrometer."
-    issue_url: https://github.com/mobie/mobie-viewer-fiji/issues/894
+    supported: yes
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_unit.zarr/view?token=KPCLCYXHd50RR7aAULPknA
   OMERO:
@@ -249,18 +324,33 @@
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr
   sample_name: 13457537.zarr
   sample_html: translate onto <a href="https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
-  vizarr:
+  avivator:
     supported: no
     opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
+  vizarr:
+    supported: no
+    opens: no
+    issue_url: https://github.com/hms-dbmi/vizarr/issues/271
+    notes: 3D translation causes image to disappear
+  Vol-E:
+    supported: no
+    opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   napari:
     supported: yes
+  BigDataViewer:
+    supported: no
+    opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   MoBIE:
     supported: no
     opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: no
     issue_url: https://github.com/scalableminds/webknossos/issues/6600
@@ -272,21 +362,29 @@
   description: Does the viewer read the 'scale' transformation for each item in `multiscales` list?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457539.zarr
   sample_name: 13457539.zarr
+  avivator:
+    supported: no
+    opens: yes
+    notes: Avivator doesn't display a scalebar or support scaling info.
   vizarr:
+    supported: no
+    opens: yes
+  Vol-E:
     supported: no
     opens: yes
   napari:
     supported: no
     opens: yes
     issue_url: https://github.com/ome/napari-ome-zarr/issues/73
+  BigDataViewer:
+    supported: yes
   MoBIE:
-    supported: no
-    opens: yes
+    supported: yes
   neuroglancer:
     supported: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: yes
   OMERO:
@@ -298,13 +396,23 @@
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457539.zarr
   sample_name: 13457539.zarr
   sample_html: translate onto <a href="https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
+  avivator:
+    supported: no
+    opens: yes
   vizarr:
+    supported: no
+    opens: yes
+  Vol-E:
     supported: no
     opens: yes
   napari:
     supported: no
     opens: yes
     issue_url: https://github.com/ome/napari-ome-zarr/issues/73
+  BigDataViewer:
+    supported: no
+    opens: yes
+    notes: Not possible to assess translation. Can't overlay multiple images
   MoBIE:
     supported: no
     opens: yes
@@ -315,7 +423,7 @@
     supported: no
     opens: yes
     notes: Not possible to assess translation. Can't overlay multiple images
-  webknossos:
+  WEBKNOSSOS:
     supported: no
     opens: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
@@ -325,11 +433,21 @@
 
 - name: overlay multiple images
   description: Is it possible to open more than 1 OME-NGFF image on the same canvas, to overlay them?
+  avivator:
+    supported: no
+    opens: yes
   vizarr:
+    supported: no
+    opens: yes
+    issue_url: https://github.com/hms-dbmi/vizarr/pull/259
+  Vol-E:
     supported: no
     opens: yes
   napari:
     supported: yes
+    opens: yes
+  BigDataViewer:
+    supported: no
     opens: yes
   MoBIE:
     supported: no
@@ -340,7 +458,7 @@
   vtk-itk-viewer:
     supported: no
     opens: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
   OMERO:
@@ -351,9 +469,15 @@
   description: Does the viewer support viewing of multiple Channels?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr
   sample_name: 13457227.zarr
+  avivator:
+    supported: yes
   vizarr:
     supported: yes
+  Vol-E:
+    supported: yes
   napari:
+    supported: yes
+  BigDataViewer:
     supported: yes
   MoBIE:
     supported: yes
@@ -362,7 +486,7 @@
     opens: yes
   vtk-itk-viewer:
     supported: yes
-  webknossos:
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/multi-channel_idr0101/view?token=7_8Gd4gVytrTVU89c5vCag
   OMERO:
@@ -372,9 +496,15 @@
   description: Does the viewer support viewing of multiple Time-points?
   sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr
   sample_name: 13457227.zarr
+  avivator:
+    supported: yes
   vizarr:
     supported: yes
+  Vol-E:
+    supported: yes
   napari:
+    supported: yes
+  BigDataViewer:
     supported: yes
   MoBIE:
     supported: yes
@@ -382,8 +512,9 @@
     supported: no
     opens: yes
   vtk-itk-viewer:
-    supported: yes
-  webknossos:
+    supported: no
+    opens: yes
+  WEBKNOSSOS:
     supported: yes
     viewer_url: https://webknossos.org/datasets/Demo_Organization/13457227.zarr/view
   OMERO:

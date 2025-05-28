@@ -1,14 +1,21 @@
 
 The following versions of each viewer were used in testing:
 
-- <a href="https://napari.org">napari</a> 0.4.16 with plugin <a href="https://github.com/ome/napari-ome-zarr/">napari-ome-zarr</a> 0.5.2 and <a href="https://github.com/ome/ome-zarr-py/">ome-zarr</a> 0.6.0.
+- <a href="https://napari.org">napari</a> 0.5.6 with plugin <a href="https://github.com/ome/napari-ome-zarr/">napari-ome-zarr</a> 0.6.1 and <a href="https://github.com/ome/ome-zarr-py/">ome-zarr</a> 0.10.3.
   - Open via command line: `napari https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr`
   - Use napari console to open additional image: `viewer.open("https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr", plugin="napari-ome-zarr")`
-- <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> October 2022. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
-- <a href="https://github.com/mobie/mobie-viewer-fiji/">MoBIE</a> plugin for ImageJ/Fiji (mobie-viewer-fiji v2.2.1, mobie-io v2.0.7). See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions and how to open Zarr files. Hint: Press ``p`` to bring the rendering settings controls.
+- <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> April 2025. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
+- [Vol-E](https://github.com/allen-cell-animated/vole-app) 
+- <a href="https://imagej.net/plugins/bdv/">BigDataViewer</a> comes with Fiji. Jar versions include bigdataviewer_fiji-6.4.1.jar, bigdataviewer-core-10.6.4, bigdataviewer-image-loaders-0.9.0, bigdataviewer-n5-1.0.2.jar.
+  - Open with: `Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer`. In the dialog, enter the URL and click `OK`.
+  - To include labels, enter the image URL in the dialog, then click `Detect datasets`. Expand the tree and select an image under `labels` AND use Cmd-click to also select the top-level parent image. With both selected, click `OK`.
+- <a href="https://github.com/mobie/mobie-viewer-fiji/">MoBIE</a> plugin for ImageJ/Fiji (mobie-viewer-fiji v6.3.1, mobie-io v4.0.3).
+  - See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions. Hint: Press ``p`` to bring the rendering settings controls.
+  - To open images: `Plugins > MoBIE > Open > Open OME ZARR` then enter image `URL.zarr`. If you want to include labels, also fill the labels field with `URL.zarr/labels/<name>` (Open the image in ome-ngff-validator first (OME icon in table below) and browse to labels to get the correct URL).
+  - To open Plates: `Plugins > MoBIE > Open > Open HCS Dataset`.
 - <a href="https://itkwidgets.readthedocs.io/en/latest">itkwidgets</a>. Use in a python notebook, or open via URL: See <a href="https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr">example</a>.
 - <a href="https://github.com/google/neuroglancer">neuroglancer</a>.
-- <a href="https://webknossos.org">webKnossos</a> version 24.03.0.
+- <a href="https://webknossos.org">webKnossos</a> version 24.11.0.
 - <a href="https://www.openmicroscopy.org/omero/">OMERO</a> with BioFormats <a href="https://github.com/ome/ZarrReader">ZarrReader</a> 0.2.0.
 
 NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji plugin based on BigDataViewer, will also support OME-NGFF soon.
@@ -16,21 +23,55 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
 
 <style>
   .supported {
-    background: green;
+    background: #8BC34A;
   }
   .fails {
-    background: red;
+    background: #f44336c9;
   }
   .ignored {
-    background: yellow;
+    background: #ffeb3ba1;
   }
   .missing {
-    background: grey;
+    background: #cccccc;
   }
-  .feature img, .sample img {
+  .feature img {
+    opacity: 0.5;
+  }
+  .feature {
+    background: white;
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .supported img, .fails img, .missing img, .ignored img {
     opacity: 0.5;
   }
 
+  .icon {
+      width: 24px;
+      height: 24px;
+  }
+  .no_border {
+      border: none;
+      background: none;
+      padding: 0;
+  }
+  .shake {
+      animation: 0.1s linear 0s infinite alternate seesaw;
+  }
+
+  td, th {
+    max-width: 130px;
+    min-width: 130px;
+  }
+  .wider {
+    min-width: 150px;
+  }
+
+  @-webkit-keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
+  @keyframes seesaw { from { transform: rotate(-0.05turn) } to { transform: rotate(0.05turn); }  }
 </style>
 
 <h3>Key</h3>
@@ -38,33 +79,23 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
 <table>
   <tbody>
   <tr>
-    <td>Feature supported</td>
-    <td class="supported"> </td>
-  </tr>
-  <tr>
-    <td>Not supported (no effect)</td>
-    <td class="ignored"> </td>
-  </tr>
-  <tr>
-    <td>Image doesn't open correctly</td>
-    <td class="fails"> </td>
-  </tr>
-  <tr>
-    <td>Not tested / not confirmed</td>
-    <td class="missing"> </td>
+    <td class="supported">Feature supported</td>
+    <td class="ignored">Not supported (no effect)</td>
+    <td class="fails">Image doesn't open correctly</td>
+    <td class="missing">Not tested / not confirmed</td>
   </tr>
   </tbody>
 </table>
 
   
-
+<div style="float: right">Scroll right for more viewers -></div>
 <table>
   <thead>
     <tr>
-      <th>feature</th>
+      <th class="feature">feature</th>
       <td>sample data</td>
       {% for viewer in site.data.viewers %}
-        <th>{{ viewer.id }}</th>
+        <th {% if viewer.widercol %} class="wider" {% endif %}>{{ viewer.id }}</th>
       {% endfor %}
     </tr>
   </thead>
@@ -79,9 +110,12 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
         </td>
         <td class="sample">
           {% if feature.sample_url and feature.sample_name %}
-            <a href="{{ feature.sample_url }}" >{{ feature.sample_name }}</a>
+            {{ feature.sample_name }}
+            <button class="no_border" title="Copy S3 URL to clipboard" onclick="copyTextToClipboard('{{ feature.sample_url }}')">
+              <img src="assets/img/copy.png" width="24px" height="24px" />
+            </button>
             <a href="https://ome.github.io/ome-ngff-validator/?source={{ feature.sample_url }}" target="_blank" title="Open in ome-ngff-validator">
-              <img src="assets/img/icon_check.png" width="20px" height="20px" /></a>
+              <img src="assets/img/ome_logo-16x16.png" width="20px" height="20px" /></a>
           {% endif %}
           {% if feature.sample_html %}
             {{ feature.sample_html }}
@@ -120,3 +154,40 @@ NB: the <a href="https://github.com/saalfeldlab/n5-viewer">N5-viewer</a>, a Fiji
     {% endfor %}
   </tbody>
 </table>
+
+<script>
+
+
+function copyTextToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    // Place in the top-left corner of screen regardless of scroll position.
+    textArea.style.position = 'fixed';
+
+    textArea.value = text;
+
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+
+    var successful;
+    try {
+        successful = document.execCommand('copy');
+    } catch (err) {
+        console.log('Oops, unable to copy');
+    }
+    document.body.removeChild(textArea);
+
+    if (successful) {
+        // show user that copying happened - shake for 1 second
+        let target = event.target;
+        let html = target.innerHTML;
+        target.classList.add("shake");
+        setTimeout(() => {
+            // reset after 1 second
+            target.classList.remove("shake");
+        }, 1000)
+    } else {
+        console.log("Copying failed")
+    }
+}
+</script>
