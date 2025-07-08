@@ -29,7 +29,7 @@
   OMERO:
     supported: no
     opens: no
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
     notes: "Z-pixel size is read without the downsampling. Can be adjusted to the downsampled value with the UI"
@@ -72,7 +72,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
     notes: "The channel labels are read from 'omero' metadata, but the colors are ignored"
@@ -104,7 +104,7 @@
     viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/multiscalesfnot2/view?token=wXBnS_9NQ_TiGagtiX1ysg
   OMERO:
     supported: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: yes
 
 - name: axes (v0.3)
@@ -136,7 +136,7 @@
     notes: "Failed to parse or validate json against data schema Error when exploring as layer set: Empty"
   OMERO:
     supported: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: no
 
@@ -165,7 +165,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: yes
 
 - name: labels
@@ -200,7 +200,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
 
@@ -233,7 +233,7 @@
     opens: no
   OMERO:
     supported: no
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: no
 
@@ -270,7 +270,7 @@
     opens: no
   OMERO:
     supported: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: no
 
@@ -311,7 +311,7 @@
   OMERO:
     notes: "All images imported but sample image is corrupted. See issue"
     issue_url: https://github.com/ome/ZarrReader/issues/44
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
 
@@ -345,7 +345,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
 
@@ -387,7 +387,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
 
@@ -423,7 +423,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
 
@@ -466,7 +466,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: no
     opens: yes
 
@@ -503,7 +503,7 @@
   OMERO:
     supported: no
     opens: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: yes
 
 - name: multiple Channels
@@ -532,7 +532,7 @@
     viewer_url: https://webknossos.org/datasets/308ffc5547d41748/multi-channel_idr0101/view?token=7_8Gd4gVytrTVU89c5vCag
   OMERO:
     supported: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: yes
 
 - name: multiple Time-points
@@ -562,5 +562,5 @@
     viewer_url: https://webknossos.org/datasets/Demo_Organization/13457227.zarr/view
   OMERO:
     supported: yes
-  MicroscopyNodes:
+  Microscopy Nodes:
     supported: yes
