@@ -26,3 +26,5 @@
   id: MoBIE
 - OMERO:
   id: OMERO
+- MicroscopyNodes:
+  id: Microscopy Nodes
