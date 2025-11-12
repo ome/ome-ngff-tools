@@ -33,6 +33,8 @@
     supported: no
     opens: yes
     notes: "Z-pixel size is read without the downsampling. Can be adjusted to the downsampled value with the UI"
+  ilastik:
+    supported: yes
 
 
 - name: omero info
@@ -76,6 +78,8 @@
     supported: no
     opens: yes
     notes: "The channel labels are read from 'omero' metadata, but the colors are ignored"
+  ilastik:
+    supported: no
 
 - name: multiscales downsampling not=2
   description: Can the viewer handle pyramids when the scale factor between levels is not equal to 2?
@@ -106,6 +110,9 @@
     supported: yes
   Microscopy Nodes:
     supported: yes
+  ilastik:
+    supported: no
+    opens: yes
 
 - name: axes (v0.3)
   description: Are the axes names respected? Are 'z', 'c' & 't' axes handled correctly?
@@ -139,6 +146,8 @@
   Microscopy Nodes:
     supported: no
     opens: no
+  ilastik:
+    supported: yes
 
 - name: axes (v0.4)
   description: Are the axes names and units respected?
@@ -166,6 +175,8 @@
     supported: no
     opens: yes
   Microscopy Nodes:
+    supported: yes
+  ilastik:
     supported: yes
 
 - name: labels
@@ -203,6 +214,9 @@
   Microscopy Nodes:
     supported: no
     opens: yes
+  ilastik:
+    supported: yes
+    notes: "Has to be explicitly picked by entering the /labels URI"
 
 - name: HCS plate
   description: Does the viewer display an OME-NGFF plate?
@@ -236,6 +250,10 @@
   Microscopy Nodes:
     supported: no
     opens: no
+  ilastik:
+    supported: no
+    opens: yes
+    notes: "Directs user to load one well at a time, no plate view or batch processing"
 
 - name: bioformats2raw.layout
   description: Does the viewer handled a Fileset of images contained within a bioformats2raw.layout wrapper?
@@ -273,6 +291,10 @@
   Microscopy Nodes:
     supported: no
     opens: no
+  ilastik:
+    supported: no
+    opens: no
+    notes: "Individual multiscales load when entering direct URI, but no guidance for finding them from top-level."
 
 - name: multiple 'multiscales'
   description: Does the viewer open any images beyond the first item in the 'multiscales' list?
@@ -314,6 +336,10 @@
   Microscopy Nodes:
     supported: no
     opens: yes
+  ilastik:
+    supported: no
+    opens: yes
+    notes: "Multiscales beyond the first one load when pasting a direct URI to one of their scales."
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?
@@ -348,6 +374,10 @@
   Microscopy Nodes:
     supported: no
     opens: yes
+  ilastik:
+    supported: no
+    opens: yes
+    notes: "Pixel size not displayed for OME-Zarr, but carried over into exports."
 
 - name: translation within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'translation' transformation for each item in `datasets` list?
@@ -390,6 +420,10 @@
   Microscopy Nodes:
     supported: no
     opens: yes
+  ilastik:
+    supported: no
+    opens: yes
+    notes: "Translation carried over to exports, but not taken into account for overlay."
 
 - name: scale within coordinateTransformations on multiscales (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `multiscales` list?
@@ -426,6 +460,10 @@
   Microscopy Nodes:
     supported: no
     opens: yes
+  ilastik:
+    supported: no
+    opens: yes
+    notes: "Pixel size not displayed for OME-Zarr, but carried over into exports."
 
 - name: translation within coordinateTransformations on multiscales (v0.4)
   description: Does the viewer read the 'translation' transformation for each item in `multiscales` list?
@@ -469,6 +507,10 @@
   Microscopy Nodes:
     supported: no
     opens: yes
+  ilastik:
+    supported: no
+    opens: yes
+    notes: "Translation carried over to exports, but not taken into account for overlay."
 
 - name: overlay multiple images
   description: Is it possible to open more than 1 OME-NGFF image on the same canvas, to overlay them?
@@ -505,6 +547,9 @@
     opens: yes
   Microscopy Nodes:
     supported: yes
+  ilastik:
+    supported: yes
+    notes: "In the sense that multiscales can be used for any number of workflow input data roles."
 
 - name: multiple Channels
   description: Does the viewer support viewing of multiple Channels?
@@ -533,6 +578,8 @@
   OMERO:
     supported: yes
   Microscopy Nodes:
+    supported: yes
+  ilastik:
     supported: yes
 
 - name: multiple Time-points
@@ -563,4 +610,6 @@
   OMERO:
     supported: yes
   Microscopy Nodes:
+    supported: yes
+  ilastik:
     supported: yes
