@@ -61,8 +61,8 @@
   neuroglancer:
     supported: no
     opens: yes
-    vtk-itk-viewer:
-      supported: no
+  vtk-itk-viewer:
+    supported: no
     opens: yes
   WEBKNOSSOS:
     supported: yes
