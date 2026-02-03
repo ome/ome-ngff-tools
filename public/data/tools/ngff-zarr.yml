@@ -1,0 +1,23 @@
+tool_info:
+  name: ngff-zarr
+  id: ngff-zarr
+test_info:
+  test-1:
+    date: 2026-02-03
+    version: 0.22.0
+    features:
+      0.5:
+        some_compatibility:
+          supported: yes
+      0.4:
+        some_compatibility:
+          supported: yes
+      0.3:
+        some_compatibility:
+          supported: yes
+      0.2:
+        some_compatibility:
+          supported: yes
+      0.1:
+        some_compatibility:
+          supported: yes

@@ -1,0 +1,71 @@
+tool_info:
+  name: vizarr
+  id: vizarr
+  viewer_url: https://hms-dbmi.github.io/vizarr/?source=
+  test_instructions: |
+    Open via URL, example:
+
+    [https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr](https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr)
+test_info:
+  test-2:
+    date: 2026-01-29
+    features:
+      0.5:
+        basic_display:
+          supported: yes
+          opens: yes
+  test-1:
+    tool_version: "April 2025"
+    features:
+      0.3:
+        axes_support:
+          supported: yes
+      0.4:
+        z_downsample:
+          opens: no
+          supported: no
+          notes: "Vizarr expects the same number of Z-sections for each pyramid resolution"
+          issue_url: https://github.com/hms-dbmi/vizarr/issues/60
+        omero_info:
+          opens: yes
+          supported: yes
+        multiscales_downsampling_not_2:
+          supported: no
+          opens: no
+          issue_url: https://github.com/hms-dbmi/vizarr/issues/101
+        axes_support:
+          supported: yes
+        labels:
+          supported: yes
+        hcs_plate:
+          supported: yes
+          notes: Only the lowest resolution of a Plate is shown. Clicking a Well loads it in a new window
+        bioformats2raw_layout:
+          supported: yes
+          notes: User is redirected to ome-ngff-validator which shows links to open each image in vizarr
+        multiple_multiscales:
+          supported: no
+          opens: yes
+        scale_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: yes
+          notes: Vizarr doesn't display a scalebar or support scaling info.
+        translation_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: no
+          issue_url: https://github.com/hms-dbmi/vizarr/issues/271
+          notes: 3D translation causes image to disappear
+        scale_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+        translation_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+        overlay_multiple_images:
+          supported: no
+          opens: yes
+          issue_url: https://github.com/hms-dbmi/vizarr/pull/259
+        multiple_channels:
+          supported: yes
+        multiple_time_points:
+          supported: yes

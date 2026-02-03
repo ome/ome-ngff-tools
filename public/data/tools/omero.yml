@@ -1,0 +1,54 @@
+tool_info:
+  name: OMERO
+  id: OMERO
+  test_instructions: >
+    Open in OMERO with BioFormats ZarrReader.
+test_info:
+  test-1:
+    additional_versions:
+      ZarrReader: 0.2.0
+    features:
+      0.3:
+        axes_support:
+          supported: yes
+      0.4:
+        z_downsample:
+          supported: no
+          opens: no
+        omero_info:
+          supported: no
+          opens: yes
+        multiscales_downsampling_not_2:
+          supported: yes
+        axes_support:
+          supported: no
+          opens: yes
+        labels:
+          supported: no
+          opens: yes
+        hcs_plate:
+          supported: no
+        bioformats2raw_layout:
+          supported: yes
+        multiple_multiscales:
+          notes: "All images imported but sample image is corrupted. See issue"
+          issue_url: https://github.com/ome/ZarrReader/issues/44
+        scale_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: yes
+        translation_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: yes
+        scale_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+        translation_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+        overlay_multiple_images:
+          supported: no
+          opens: yes
+        multiple_channels:
+          supported: yes
+        multiple_time_points:
+          supported: yes

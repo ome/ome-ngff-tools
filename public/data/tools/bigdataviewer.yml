@@ -1,0 +1,59 @@
+tool_info:
+  name: BigDataViewer
+  id: BigDataViewer
+  widercol: true
+  test_instructions: >
+    In Fiji: Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer.
+    Enter the URL in the dialog and click OK.
+test_info:
+  test-1:
+    additional_versions:
+      bigdataviewer_fiji: 6.4.1
+      bigdataviewer-core: 10.6.4
+      bigdataviewer-image-loaders: 0.9.0
+      bigdataviewer-n5: 1.0.2
+    features:
+      0.3:
+        axes_support:
+          supported: no
+      0.4:
+        z_downsample:
+          supported: yes
+        omero_info:
+          supported: no
+          opens: yes
+        multiscales_downsampling_not_2:
+          supported: yes
+        axes_support:
+          supported: yes
+        labels:
+          supported: yes
+          notes: See instructions above for loading labels
+        hcs_plate:
+          supported: no
+        bioformats2raw_layout:
+          supported: yes
+          notes: "In the 'Open' dialog, choose `Detect Datasets`. One or more single resolution zarr arrays can be opened, but not as a 'multiscale' image."
+        multiple_multiscales:
+          supported: no
+          opens: no
+          notes: "Fails with: java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 3"
+        scale_within_coordinate_transformations_on_datasets_v0_4:
+          supported: yes
+        translation_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: yes
+          notes: Not possible to assess translation. Can't overlay multiple images
+        scale_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: yes
+        translation_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+          notes: Not possible to assess translation. Can't overlay multiple images
+        overlay_multiple_images:
+          supported: no
+          opens: yes
+        multiple_channels:
+          supported: yes
+        multiple_time_points:
+          supported: yes

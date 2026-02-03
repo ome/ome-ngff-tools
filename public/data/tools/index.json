@@ -1,0 +1,13 @@
+[
+  "data/tools/avivator.yml",
+  "data/tools/vizarr.yml",
+  "data/tools/vole.yml",
+  "data/tools/vtk-itk-viewer.yml",
+  "data/tools/neuroglancer.yml",
+  "data/tools/webknossos.yml",
+  "data/tools/napari.yml",
+  "data/tools/bigdataviewer.yml",
+  "data/tools/mobie.yml",
+  "data/tools/omero.yml",
+  "data/tools/microscopynodes.yml"
+]

@@ -1,0 +1,14 @@
+tool_info:
+  name: bioio-ome-zarr
+  id: bioio-ome-zarr
+test_info:
+  test-1:
+    date: 2026-02-03
+    version: v3.2.1
+    features:
+      0.5:
+        some_compatibility:
+          supported: yes
+      0.4:
+        some_compatibility:
+          supported: yes

@@ -1,0 +1,66 @@
+tool_info:
+  name: WEBKNOSSOS
+  id: WEBKNOSSOS
+  widercol: true
+  test_instructions: >
+    Open via WebKnossos dataset link (viewer URLs may be provided for specific samples).
+test_info:
+  test-1:
+    tool_version: "24.11.0"
+    features:
+      0.3:
+        axes_support:
+          supported: no
+          opens: no
+          notes: "Failed to parse or validate json against data schema Error when exploring as layer set: Empty"
+      0.4:
+        z_downsample:
+          supported: yes
+          viewer_url: https://webknossos.org/datasets/308ffc5547d41748/9836832_z_dtype_fix.zarr/view?token=vO-L4B5wwTea_SCWegbylQ
+        omero_info:
+          supported: yes
+          opens: yes
+          notes: "rdefs are not supported"
+          viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_20240314.zarr?token=equ22C3ELBC6y9aS4pW3cw
+        multiscales_downsampling_not_2:
+          supported: yes
+          viewer_url: https://webknossos.org/datasets/18c44a2271fb102d/multiscalesfnot2/view?token=wXBnS_9NQ_TiGagtiX1ysg
+        axes_support:
+          supported: yes
+        labels:
+          supported: yes
+          opens: yes
+          viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_20240314.zarr?token=equ22C3ELBC6y9aS4pW3cw
+        hcs_plate:
+          supported: no
+          opens: no
+        bioformats2raw_layout:
+          supported: no
+          opens: no
+        multiple_multiscales:
+          supported: no
+          opens: no
+          notes: "Error when exploring as layer set: Could not extract common voxel size from layers <~ detected mags are not unique, found List((1, 1, 2), (2, 2, 1), (2, 2, 2))"
+        scale_within_coordinate_transformations_on_datasets_v0_4:
+          supported: yes
+          viewer_url: https://webknossos.org/datasets/308ffc5547d41748/6001240_unit.zarr/view?token=KPCLCYXHd50RR7aAULPknA
+        translation_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: no
+          issue_url: https://github.com/scalableminds/webknossos/issues/6600
+        scale_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+        translation_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+          viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
+        overlay_multiple_images:
+          supported: yes
+          viewer_url: https://webknossos.org/datasets/308ffc5547d41748/idr0101_overlays/view?token=dBVGYI9oRvcDfPmDBm74ag#367,444,7,0,2.177
+        multiple_channels:
+          supported: yes
+          viewer_url: https://webknossos.org/datasets/308ffc5547d41748/multi-channel_idr0101/view?token=7_8Gd4gVytrTVU89c5vCag
+        multiple_time_points:
+          supported: yes
+          viewer_url: https://webknossos.org/datasets/Demo_Organization/13457227.zarr/view

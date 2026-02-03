@@ -1,0 +1,75 @@
+tool_info:
+  name: neuroglancer
+  id: neuroglancer
+  viewer_url: 'https://neuroglancer-demo.appspot.com/#!{"layers":[{"source":"zarr://'
+  viewer_url_postfix: '","name":"OME-NGFF"}]}'
+  test_instructions: |
+    Open via URL. Copy and paste this example into your browser:
+
+    `https://neuroglancer-demo.appspot.com/#!{"layers":[{"source":"zarr://https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr","name":"OME-NGFF"}]}`
+test_info:
+  test-4:
+    date: 2026-01-29
+    features:
+      0.5:
+        basic_display:
+          supported: yes
+          opens: yes
+          notes: Seems to not support the `omero` metadata in 0.5.
+  test-3:
+    date: 2026-01-29
+    features:
+      0.4:
+        omero_info:
+          supported: yes
+          opens: yes
+  test-2:
+    features:
+      0.3:
+        axes_support:
+          supported: no
+          opens: no
+  test-1:
+    features:
+      0.3:
+        axes_support:
+          supported: yes # Added for testing the replacement by test-2
+          opens: yes # Added for testing the replacement by test-2
+      0.4:
+        z_downsample:
+          supported: yes
+        omero_info:
+          supported: no
+          opens: yes
+        multiscales_downsampling_not_2:
+          notes: "Fails with Error parsing zarr metadata: Error parsing 'dtype' property: Unsupported numpy data type: >u1"
+        axes_support:
+          supported: yes
+        labels:
+          supported: no
+          opens: yes
+        hcs_plate:
+          supported: no
+          opens: no
+        bioformats2raw_layout:
+          supported: no
+          opens: no
+          notes: "Error: Neither .zarray metadata nor OME multiscale metadata found"
+        multiple_multiscales:
+          supported: no
+          opens: yes
+        scale_within_coordinate_transformations_on_datasets_v0_4:
+          supported: yes
+        scale_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: yes
+        translation_within_coordinate_transformations_on_multiscales_v0_4:
+          notes: "Can't make out the parent Image 13457227.zarr or overlaid Image 13457539.zarr"
+        overlay_multiple_images:
+          supported: no
+          opens: yes
+        multiple_channels:
+          supported: no
+          opens: yes
+        multiple_time_points:
+          supported: no
+          opens: yes

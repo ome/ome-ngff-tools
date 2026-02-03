@@ -1,0 +1,17 @@
+viewer:
+  - avivator
+  - bigdataviewer
+  - microscopynodes
+  - mobie
+  - napari
+  - neuroglancer
+  - omero
+  - vizarr
+  - vole
+  - vtk-itk-viewer
+  - webknossos
+reader_and_writer:
+  - ome-zarr-py
+  - ngio
+  - ngff-zarr
+  - bioio-ome-zarr

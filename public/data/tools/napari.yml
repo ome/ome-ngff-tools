@@ -1,0 +1,59 @@
+tool_info:
+  name: napari
+  id: napari
+  test_instructions: |
+    Open via command line, for example: 
+    * `napari https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr`
+    Use napari console to open additional image: 
+    * `viewer.open("https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr", plugin="napari-ome-zarr")`
+test_info:
+  test-1:
+    tool_version: 0.5.6
+    additional_versions:
+      napari-ome-zarr: 0.6.1
+      ome-zarr: 0.10.3
+    features:
+      0.3:
+        axes_support:
+        supported: yes
+      0.4:
+        z_downsample:
+          notes: "Image appears to load and display OK, but very quickly crashes on zooming etc."
+        omero_info:
+          supported: yes
+          opens: yes
+        multiscales_downsampling_not_2:
+          supported: yes
+        axes_support:
+          supported: yes
+        labels:
+          supported: yes
+        hcs_plate:
+          supported: yes
+          notes: "Plate appears to load and display OK, but crashes on zooming in."
+        bioformats2raw_layout:
+          supported: no
+          opens: no
+          issue_url: https://github.com/ome/napari-ome-zarr/issues/71
+        multiple_multiscales:
+          supported: no
+          opens: yes
+        scale_within_coordinate_transformations_on_datasets_v0_4:
+          supported: yes
+        translation_within_coordinate_transformations_on_datasets_v0_4:
+          supported: yes
+        scale_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+          issue_url: https://github.com/ome/napari-ome-zarr/issues/73
+        translation_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+          issue_url: https://github.com/ome/napari-ome-zarr/issues/73
+        overlay_multiple_images:
+          supported: yes
+          opens: yes
+        multiple_channels:
+          supported: yes
+        multiple_time_points:
+          supported: yes

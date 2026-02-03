@@ -1,0 +1,27 @@
+tool_info:
+  name: template
+  id: template
+  test_instructions: >
+    Open via command line, for example: 
+    * template https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
+
+test_info:
+  test-1:
+    tool_version: 0.5.6
+    additional_versions:
+      template-plugin: 0.6.1
+      template-lib-zarr: 0.10.3
+    features:
+      0.3:
+        axes_support:
+        supported: yes
+      0.4:
+        z_downsample:
+          notes: "Image appears to load and display OK, but very quickly crashes on zooming etc."
+        omero_info:
+          supported: yes
+          opens: yes
+        multiscales_downsampling_not_2:
+          supported: no
+          opens: yes
+          issue_url: https://github.com/ome/template-zarr/issues/1000000

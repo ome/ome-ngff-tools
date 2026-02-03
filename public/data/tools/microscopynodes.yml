@@ -1,0 +1,58 @@
+tool_info:
+  name: Microscopy Nodes
+  id: MicroscopyNodes
+  test_instructions: >
+    Open in Blender with the Microscopy Nodes add-on and load the OME-Zarr URL.
+test_info:
+  test-1:
+    additional_versions:
+      blender: 4.4.1
+      microscopy_nodes: 2.2.0
+    features:
+      0.3:
+        axes_support:
+          supported: no
+          opens: no
+      0.4:
+        z_downsample:
+          supported: no
+          opens: yes
+          notes: "Z-pixel size is read without the downsampling. Can be adjusted to the downsampled value with the UI"
+        omero_info:
+          supported: no
+          opens: yes
+          notes: "The channel labels are read from 'omero' metadata, but the colors are ignored"
+        multiscales_downsampling_not_2:
+          supported: yes
+        axes_support:
+          supported: yes
+        labels:
+          supported: no
+          opens: yes
+        hcs_plate:
+          supported: no
+          opens: no
+        bioformats2raw_layout:
+          supported: no
+          opens: no
+        multiple_multiscales:
+          supported: no
+          opens: yes
+        scale_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: yes
+        translation_within_coordinate_transformations_on_datasets_v0_4:
+          supported: no
+          opens: yes
+        scale_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+        translation_within_coordinate_transformations_on_multiscales_v0_4:
+          supported: no
+          opens: yes
+        overlay_multiple_images:
+          supported: yes
+        multiple_channels:
+          supported: yes
+        multiple_time_points:
+          supported: yes
