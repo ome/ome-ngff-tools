@@ -2,9 +2,9 @@
 The following versions of each viewer were used in testing:
 
 - <a href="https://napari.org">napari</a> 0.5.6 with plugin <a href="https://github.com/ome/napari-ome-zarr/">napari-ome-zarr</a> 0.6.1 and <a href="https://github.com/ome/ome-zarr-py/">ome-zarr</a> 0.10.3.
-  - Open via command line: `napari https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr`
-  - Use napari console to open additional image: `viewer.open("https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr", plugin="napari-ome-zarr")`
-- <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> April 2025. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
+  - Open via command line: `napari https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr`
+  - Use napari console to open additional image: `viewer.open("https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr", plugin="napari-ome-zarr")`
+- <a href="https://github.com/hms-dbmi/vizarr/">vizarr</a> using <a href="https://hms-dbmi.github.io/vizarr">current viewer</a> April 2025. Open via URL - see <a href="https://hms-dbmi.github.io/vizarr/?source=https://livingobjects.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr">example</a>.
 - [Vol-E](https://github.com/allen-cell-animated/vole-app)
 - <a href="https://imagej.net/plugins/bdv/">BigDataViewer</a> comes with Fiji. Jar versions include bigdataviewer_fiji-6.4.1.jar, bigdataviewer-core-10.6.4, bigdataviewer-image-loaders-0.9.0, bigdataviewer-n5-1.0.2.jar.
   - Open with: `Plugins > BigDataViewer > HDF5/N5/Zarr/OME-NGFF Viewer`. In the dialog, enter the URL and click `OK`.
@@ -13,7 +13,7 @@ The following versions of each viewer were used in testing:
   - See <a href="https://omero-guides.readthedocs.io/en/latest/fiji/docs/view_mobie_zarr.html">MoBIE  guide</a> for installation instructions. Hint: Press ``p`` to bring the rendering settings controls.
   - To open images: `Plugins > MoBIE > Open > Open OME ZARR` then enter image `URL.zarr`. If you want to include labels, also fill the labels field with `URL.zarr/labels/<name>` (Open the image in ome-ngff-validator first (OME icon in table below) and browse to labels to get the correct URL).
   - To open Plates: `Plugins > MoBIE > Open > Open HCS Dataset`.
-- <a href="https://itkwidgets.readthedocs.io/en/latest">itkwidgets</a>. Use in a python notebook, or open via URL: See <a href="https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr">example</a>.
+- <a href="https://itkwidgets.readthedocs.io/en/latest">itkwidgets</a>. Use in a python notebook, or open via URL: See <a href="https://kitware.github.io/itk-vtk-viewer/app/?rotate=false&fileToLoad=https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr">example</a>.
 - <a href="https://github.com/google/neuroglancer">neuroglancer</a>.
 - <a href="https://webknossos.org">webKnossos</a> version 24.11.0.
 - <a href="https://www.openmicroscopy.org/omero/">OMERO</a> with BioFormats <a href="https://github.com/ome/ZarrReader">ZarrReader</a> 0.2.0.
