@@ -37,7 +37,7 @@
 
 - name: omero info
   description: Does the viewer use the 'omero' metadata to set channel colors, names and rendering levels?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
   sample_name: 6001240.zarr
   avivator:
     supported: no
@@ -109,7 +109,7 @@
 
 - name: axes (v0.3)
   description: Are the axes names respected? Are 'z', 'c' & 't' axes handled correctly?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.3/idr0079A/9836998.zarr
   sample_name: 9836998.zarr
   avivator:
     supported: yes
@@ -142,7 +142,7 @@
 
 - name: axes (v0.4)
   description: Are the axes names and units respected?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
   sample_name: 6001240.zarr
   avivator:
     supported: yes
@@ -170,7 +170,7 @@
 
 - name: labels
   description: Does the viewer read and display labels nested within the image container?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0052A/5514375.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0052A/5514375.zarr
   sample_name: 5514375.zarr
   avivator:
     supported: no
@@ -206,7 +206,7 @@
 
 - name: HCS plate
   description: Does the viewer display an OME-NGFF plate?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0001A/2551.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0001A/2551.zarr
   sample_name: idr0001
   avivator:
     supported: no
@@ -276,7 +276,7 @@
 
 - name: multiple 'multiscales'
   description: Does the viewer open any images beyond the first item in the 'multiscales' list?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0050A/4995115.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0050A/4995115.zarr
   sample_name: 4995115.zarr
   avivator:
     supported: no
@@ -317,7 +317,7 @@
 
 - name: scale within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `datasets` list, show pixel size or scalebar?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr
   sample_name: 6001240.zarr
   avivator:
     supported: no
@@ -351,9 +351,9 @@
 
 - name: translation within coordinateTransformations on datasets (v0.4)
   description: Does the viewer read the 'translation' transformation for each item in `datasets` list?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457537.zarr
   sample_name: 13457537.zarr
-  sample_html: translate onto <a href="https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
+  sample_html: translate onto <a href="https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
   avivator:
     supported: no
     opens: yes
@@ -393,7 +393,7 @@
 
 - name: scale within coordinateTransformations on multiscales (v0.4)
   description: Does the viewer read the 'scale' transformation for each item in `multiscales` list?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457539.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457539.zarr
   sample_name: 13457539.zarr
   avivator:
     supported: no
@@ -429,9 +429,9 @@
 
 - name: translation within coordinateTransformations on multiscales (v0.4)
   description: Does the viewer read the 'translation' transformation for each item in `multiscales` list?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457539.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457539.zarr
   sample_name: 13457539.zarr
-  sample_html: translate onto <a href="https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
+  sample_html: translate onto <a href="https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr">13457227.zarr</a>
   avivator:
     supported: no
     opens: yes
@@ -508,7 +508,7 @@
 
 - name: multiple Channels
   description: Does the viewer support viewing of multiple Channels?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr
   sample_name: 13457227.zarr
   avivator:
     supported: yes
@@ -537,7 +537,7 @@
 
 - name: multiple Time-points
   description: Does the viewer support viewing of multiple Time-points?
-  sample_url: https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr
+  sample_url: https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0101A/13457227.zarr
   sample_name: 13457227.zarr
   avivator:
     supported: yes
